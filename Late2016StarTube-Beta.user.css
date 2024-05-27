@@ -1,13 +1,35 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.0.3
+@version        1.0.4
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
 @var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
+/* 2016 Roboto font stuff. If you have the Roboto Font for V3 style you should disable it to use the Roboto here. */
+    @font-face {
+        font-family: 'Roboto'; font-style: normal; font-weight: 400; src: local('Roboto Regular'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype'); }
+
+    @font-face {
+        font-family: 'Roboto'; font-style: italic; font-weight: 400; src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype'); }
+
+    @font-face {
+        font-family: 'Roboto'; font-style: normal; font-weight: 700; src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype'); }
+
+    @font-face {
+        font-family: 'Roboto'; font-style: italic; font-weight: 700; src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype'); }
+
+    body, input, button, textarea, html {
+        font-family: Roboto, Arial, sans-serif; font-kerning: none; }
+
+    .html5-video-player {
+        font-family: Roboto }
+/* This is where most of the magic happens. */
+    h1,h2{
+    font-weight:normal}
+
     .cardified-page .branded-page-related-channels h2 {
         font-size: 15px; font-weight: bold; text-transform: none; color: #333; }
 
@@ -139,6 +161,9 @@
     
     .pl-video-detail-container .pl-video-owner a {
     color: #767676; font-size: 12px;}
+    
+    .pl-video-list>li:before {
+    color: #767676 }
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 6px; }
@@ -150,14 +175,8 @@
 .stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
     background-image: unset; }
 
-.autoplay-bar .checkbox-on-off {
-    font-weight: 500; color: #767676; }
-
 [exp-modern-styles] .oz-expander-arrow-down {
     margin-top: 10px !important; }
-
-[exp-modern-styles] #appbar-guide-menu {
-    padding: 13px 23.5px; }
 
 .exp-new-subscribe-style .yt-subscription-button-subscriber-count-branded-horizontal {
     padding: 0 7px; color: #737373; }
@@ -171,7 +190,7 @@
 .video-list .video-list-item .title {
     font-size: 14px; }
 
-.view-count .extra, .yt-badge, [exp-always-show-compact-date] .related-video .extra {
+.stat.view-count > .extra {
     display:none !important; }
 
 .yt-ui-ellipsis {
@@ -202,7 +221,7 @@
     top: unset; bottom: 99px;}
 
 .feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-next, .feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-prev {
-    width: 10px;}
+    width: 10px; height: 60px;}
 
 .feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-prev {
     left: -14px;}
@@ -217,5 +236,77 @@
     display:none !important; }
 
 .compact-shelf .yt-uix-shelfslider-next, .compact-shelf .yt-uix-shelfslider-prev {
-    width: 14px; height: 45px; }
+    width: 18px; height: 45px; }
+    
+.yt-lockup-meta-info>li:before {
+    content: '\002022'; margin: 0 3px;}
+
+.yt-lockup-meta-info>li:first-child:before{
+    display:none}
+
+.yt-lockup-meta-info>li:last-child{
+    margin-right:0}
+
+.yt-lockup-grid .yt-lockup-meta-info>li {
+    margin-right: unset;}
+    
+#transcript.watch8-menuitem::before {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
+
+.channel-header .secondary-header-contents {
+    padding: 0 15px;}
+
+.yt-uix-button-icon-c4-grid-flow{
+background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
+    
+.yt-uix-button-icon-c4-list-flow{
+background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
+    
+.yt-uix-button-icon-c4-grid-flow,.yt-uix-button-icon-c4-list-flow{
+opacity:.6}
+    
+.yt-uix-button:not(.yt-uix-button-toggled):hover .yt-uix-button-icon-c4-grid-flow,.yt-uix-button:not(.yt-uix-button-toggled):hover .yt-uix-button-icon-c4-list-flow{
+opacity:.7}
+    
+.yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
+opacity:.8}
+    
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow{
+opacity:1}
+
+.network-icon-google {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-favicons-vflWPH7Ai.png);}
+
+.exp-top-guide .guide-item .thumb {
+    margin-left: 9px;}
+
+#content-sort-menu {
+    margin-right: 5px;}
+
+.yt-lockup-meta, .yt-lockup-description, .yt-lockup-badges {
+    margin: 3px 0 0;}
+
+.yt-alert-naked.yt-alert-success .icon, .yt-alert-small.yt-alert-success .icon {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -615px -121px; background-size: auto; width: 19px; height: 20px;}
+
+.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+    background: #167ac6;}
+
+.yt-alert-naked .yt-alert-content {
+    padding: 4px 13px 3px 0;}
+
+.autoplay-bar .checkbox-on-off {
+    color: #767676;}
+    
+.yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info{
+    background:#167ac6}
+    
+.yt-alert-default.yt-alert-info .icon,.yt-alert-actionable.yt-alert-info .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
+    
+.yt-alert-naked.yt-alert-info .icon,.yt-alert-small.yt-alert-info .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; background-size:auto; width:20px; height:20px}
+
+.yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
+    padding: 10px 0;}
 }
