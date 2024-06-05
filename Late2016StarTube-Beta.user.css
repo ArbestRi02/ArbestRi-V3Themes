@@ -8,25 +8,6 @@
 @var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-/* 2016 Roboto font stuff. If you have the Roboto Font for V3 style you should disable it to use the Roboto here. */
-    @font-face {
-        font-family: 'Roboto'; font-style: normal; font-weight: 400; src: local('Roboto Regular'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype'); }
-
-    @font-face {
-        font-family: 'Roboto'; font-style: italic; font-weight: 400; src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype'); }
-
-    @font-face {
-        font-family: 'Roboto'; font-style: normal; font-weight: 700; src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype'); }
-
-    @font-face {
-        font-family: 'Roboto'; font-style: italic; font-weight: 700; src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype'); }
-
-    body, input, button, textarea, html {
-        font-family: Roboto, Arial, sans-serif; font-kerning: none; }
-
-    .html5-video-player {
-        font-family: Roboto }
-/* This is where most of the magic happens. */
     h1,h2{
     font-weight:normal}
 
@@ -59,9 +40,6 @@
 
     .exp-new-logo #footer-logo img {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -637px 0; }
-
-    #c4-header-bg-container {
-        padding-bottom: 16.1%; }
 
     .yt-lockup {
         color: #767676; line-height: 1.3em; position: relative; }
