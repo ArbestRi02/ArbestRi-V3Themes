@@ -5,17 +5,16 @@
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
-@var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     h1,h2{
     font-weight:normal}
 
     .cardified-page .branded-page-related-channels h2 {
-        font-size: 15px; font-weight: bold; text-transform: none; color: #333; }
+        font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
 
     [exp-modern-styles] .channel-header .primary-header-contents {
-        padding: 17px 15px 10px; }
+        padding: 17px 15px 5px; }
 
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
@@ -131,9 +130,6 @@
     .pl-header .yt-uix-button-icon-playlist-like {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -812px -38px; width: 13px; height: 13px; }
     
-    .pl-video-detail-container .pl-video-owner {
-    width: 1041px; line-height: unset;}
-    
     .pl-video-detail-container .pl-video-detail {
     line-height: 23px;}
     
@@ -145,10 +141,6 @@
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 6px; }
-
-#guide #appbar-guide-menu {
-    & when (@Guide = 1) {
-        top: 0 !important; } }
 
 .stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
     background-image: unset; }
@@ -168,8 +160,8 @@
 .video-list .video-list-item .title {
     font-size: 14px; }
 
-.stat.view-count > .extra {
-    display:none !important; }
+ /* .stat.view-count > .extra {
+    display:none !important; } */
 
 .yt-ui-ellipsis {
     line-height: 1.25em; }
@@ -272,9 +264,6 @@ opacity:1}
 
 .yt-alert-naked .yt-alert-content {
     padding: 4px 13px 3px 0;}
-
-.autoplay-bar .checkbox-on-off {
-    color: #767676;}
     
 .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info{
     background:#167ac6}
@@ -287,4 +276,33 @@ opacity:1}
 
 .yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
     padding: 10px 0;}
+
+.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences {
+    opacity: 1; }
+
+.watch-extras-section .title,.watch-extras-section .content{
+    font-size:11px; line-height:11px; margin-bottom:5px}
+
+.watch-extras-section .title{
+    float:left; font-weight:500; width:100px; margin-right:10px}
+
+.yt-alert-default.yt-alert-error .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
+
+.yt-alert-default.yt-alert-warn .icon,.yt-alert-actionable.yt-alert-warn .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
+
+#footer .yt-uix-button-icon-footer-language {
+    opacity: 1 !important; }
+
+.yt-subscription-button-subscriber-count-vertical-container {
+    display:none !important }
+.pl-header .yt-uix-button-icon-playlist-share {
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -71px -190px; background-size:auto; width:20px; height:20px }
+
+.multirow-shelf .yt-uix-expander-head {
+    position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
+
+.g-hovercard > .run-text.run:first-child {
+    display:none !important }
 }
