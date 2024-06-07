@@ -1,10 +1,12 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.0.4
+@version        1.0.5
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
+@var            select              FooterLogo                 "Footer logo"              ["2015-2017*", "2017-2024"]
+@var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     h1,h2{
@@ -25,8 +27,8 @@
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    a, .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a {
-        color: #167ac6; }
+    .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a {
+        color: #167ac6 !important; }
     
     #watch7-sidebar .video-list-item a:hover .title {
         color: #167ac6; } 
@@ -38,7 +40,10 @@
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflNVER5Q.webp) -442px -24px; }
 
     .exp-new-logo #footer-logo img {
+        & when (@FooterLogo = 2015-2017) {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -637px 0; }
+        & when (@FooterLogo = 2017-2024) {
+        background: no-repeat url(//www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png); background-size: 100px 30px; width: 100px; } }
 
     .yt-lockup {
         color: #767676; line-height: 1.3em; position: relative; }
@@ -74,7 +79,7 @@
         font-size: 13px; }
 
     [exp-true-scrollable-guide] #appbar-guide-menu {
-        overflow: overlay; }
+        overflow: overlay !important; }
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
         padding: 0 9px 0 4.5px; }
@@ -141,6 +146,10 @@
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 6px; }
+    
+    #guide #appbar-guide-menu {
+    & when (@Guide = 1) {
+        top: 0 !important; } }
 
 .stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
     background-image: unset; }
@@ -226,10 +235,10 @@
 .channel-header .secondary-header-contents {
     padding: 0 15px;}
 
-.yt-uix-button-icon-c4-grid-flow{
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
     
-.yt-uix-button-icon-c4-list-flow{
+.yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow{
 background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
     
 .yt-uix-button-icon-c4-grid-flow,.yt-uix-button-icon-c4-list-flow{
@@ -303,6 +312,12 @@ opacity:1}
 .multirow-shelf .yt-uix-expander-head {
     position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
 
-.g-hovercard > .run-text.run:first-child {
+.g-hovercard > .run-text.run:first-child, #FEsocial-guide-item {
     display:none !important }
+
+#FEsubscriptions-guide-item > .guide-item.yt-uix-sessionlink.yt-valign {
+    border-bottom: 1px solid #e2e2e2; margin-bottom: 6px; }
+
+.pl-header .yt-uix-button-icon-gear {
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
 }
