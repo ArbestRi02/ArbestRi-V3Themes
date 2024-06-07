@@ -10,7 +10,10 @@
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     h1,h2{
-    font-weight:normal}
+    font-weight:normal;}
+    
+    body, input, button, textarea {
+    font-kerning: none;}
 
     .cardified-page .branded-page-related-channels h2 {
         font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
@@ -142,10 +145,10 @@
     color: #767676; font-size: 12px;}
     
     .pl-video-list>li:before {
-    color: #767676 }
+    color: #767676; margin-right: 2px; }
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
-        padding: 0 6px; }
+        padding: 0 5.5px; }
     
     #guide #appbar-guide-menu {
     & when (@Guide = 1) {
@@ -306,8 +309,6 @@ opacity:1}
 
 .yt-subscription-button-subscriber-count-vertical-container {
     display:none !important }
-.pl-header .yt-uix-button-icon-playlist-share {
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -71px -190px; background-size:auto; width:20px; height:20px }
 
 .multirow-shelf .yt-uix-expander-head {
     position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
@@ -320,4 +321,40 @@ opacity:1}
 
 .pl-header .yt-uix-button-icon-gear {
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
+
+.yt-thumb-27, #yt-masthead-user .yt-masthead-user-icon {
+    border-radius: 50%; }
+
+.channel-header #header-links {
+    right: 15px; }
+
+#watch7-playlist-tray, #watch7-playlist-tray-mask {
+    background: #222;}
+
+#watch7-playlist-tray .video-list-item {
+    border-top: unset; border-bottom: unset;text-shadow: unset !important;}
+
+#watch7-playlist-tray .video-list-item .title {
+    font-weight: normal;color: #cacaca !important;text-shadow: unset !important;}
+
+.video-list-item .stat {
+    color: #767676;font-size: 11px !important;}
+
+#watch7-playlist-tray .playlist-bar-item-playing {
+    border-color: unset; background: #3a3a3a;height: 61px;}
+    
+.video-list-item.yt-uix-scroller-scroll-unit.playlist-bar-item-playing > .spf-link > .stat.count {
+    color:#c03636 !important;}
+
+#watch7-playlist-tray .video-list-item .count {
+    font-weight: normal;color: #b8b8b8;font-size: 10px !important;}
+
+#watch7-playlist-tray .video-list-item .ux-thumb-wrap {
+    margin-left: -10px;}
+
+#watch7-playlist-tray .video-list-item:hover{
+    background: #525252;}
+
+#watch-related-autoplay > .video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
+    font-weight: normal;}
 }
