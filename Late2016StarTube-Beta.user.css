@@ -172,9 +172,6 @@
 #watch-related >li.video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
     font-weight: normal !important; }
 
- /* .stat.view-count > .extra {
-    display:none !important; } */
-
 .yt-ui-ellipsis {
     line-height: 1.25em; }
     
@@ -366,4 +363,13 @@ opacity:1}
 
 .secondary-header-contents .nav-text {
     font-weight: 500;}
+
+.pl-video-owner.pl-video-detail:before {
+    content: "by ";color: #767676;font-size: 12px;}
+
+#c4-about-tab:before {
+    content: "Description";font-weight:500;margin-left: 10px; }
+
+.branded-page-v2-primary-col .about-description.branded-page-box-padding {
+    padding: 10px;padding-top: 0px !important;}
 }
