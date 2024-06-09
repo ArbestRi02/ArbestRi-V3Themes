@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.0.5
+@version        1.1.0
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
@@ -9,6 +9,7 @@
 @var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
+    /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
     h1,h2{
     font-weight:normal;}
     
@@ -100,19 +101,19 @@
         display: none !important }
 
     .yt-pl-thumb .sidebar {
-        width: 43.75%; }
+        width: 43.75%;background: rgba(0,0,0,.85); }
 
     .yt-pl-thumb .side-thumbs {
         display: none !important; }
 
     .yt-pl-thumb .video-count-wrapper {
-        height: 110px; text-transform: uppercase; color: #cfcfcf; opacity: 1; }
+        height: 110px; text-transform: uppercase; color: #cfcfcf; }
 
     .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content {
-        width: 113%; text-transform: uppercase; font-size: 13px; }
+        width: 113%; text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
 
     .yt-pl-thumb .video-count-wrapper .text-label {
-        font-size: 10px; line-height: 25px; }
+        font-size: 10px; line-height: 20px; }
 
     .yt-pl-thumb .video-count-wrapper .count-label {
         font-size: 18px; font-weight: normal; }
@@ -371,5 +372,11 @@ opacity:1}
     content: "Description";font-weight:500;margin-left: 10px; }
 
 .branded-page-v2-primary-col .about-description.branded-page-box-padding {
-    padding: 10px;padding-top: 0px !important;}
+    padding: 10px;}
+
+.yt-pl-thumb-overlay img {
+    width: 12px; height: 10px;}
+
+.yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
 }
