@@ -377,6 +377,9 @@ opacity:1}
 .yt-pl-thumb-overlay img {
     width: 12px; height: 10px;}
 
+.yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
+ 
 .guide-quick-filter, .guide-quick-filter-container {
     width: auto;}
 
