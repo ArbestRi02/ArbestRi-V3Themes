@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.1.0
+@version        1.0.5
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
@@ -237,10 +237,10 @@
     padding: 0 15px;}
 
 .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
-background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
     
 .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow{
-background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
     
 .yt-uix-button-icon-c4-grid-flow,.yt-uix-button-icon-c4-list-flow{
 opacity:.6}
@@ -279,10 +279,10 @@ opacity:1}
     background:#167ac6}
     
 .yt-alert-default.yt-alert-info .icon,.yt-alert-actionable.yt-alert-info .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
     
 .yt-alert-naked.yt-alert-info .icon,.yt-alert-small.yt-alert-info .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; background-size:auto; width:20px; height:20px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; background-size:auto; width:20px; height:20px}
 
 .yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
     padding: 10px 0;}
@@ -297,10 +297,10 @@ opacity:1}
     float:left; font-weight:500; width:100px; margin-right:10px}
 
 .yt-alert-default.yt-alert-error .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
 
 .yt-alert-default.yt-alert-warn .icon,.yt-alert-actionable.yt-alert-warn .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
 
 #footer .yt-uix-button-icon-footer-language {
     opacity: 1 !important; }
@@ -318,7 +318,7 @@ opacity:1}
     border-bottom: 1px solid #e2e2e2; margin-bottom: 6px; }
 
 .pl-header .yt-uix-button-icon-gear {
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
 
 .yt-thumb-27, #yt-masthead-user .yt-masthead-user-icon {
     border-radius: 50%; }
@@ -377,6 +377,27 @@ opacity:1}
 .yt-pl-thumb-overlay img {
     width: 12px; height: 10px;}
 
-.yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
+.guide-quick-filter, .guide-quick-filter-container {
+    width: auto;}
+
+#FEhistory-guide-item:before {
+    & when (@FooterLogo = 2015-2017) {
+    content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px}
+    & when (@FooterLogo = 2017-2024) {
+    content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px} }
+
+.guide-section:nth-of-type(1) > .guide-section-separator {
+    display:none !important}
+    
+#guide-library-section > h3 {
+    display:none !important}
+
+[exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon {
+    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflvB63an.png) -52px -320px;}
+
+.yt-lockup .yt-lockup-meta b {
+    color: #767676;font-weight:normal;}
+    
+.feed-item-checkbox-container {
+    display:none !important}
 }
