@@ -9,8 +9,8 @@
 @var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-    /*NOTE: This code isn't really well organized or optimized, this is just mostly organizing based on how new the code is.*/
-    h1,h2{
+    /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
+    h1,h2, #watch-related-autoplay > .video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b{
     font-weight:normal;}
     
     body, input, button, textarea {
@@ -28,7 +28,7 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-pl-thumb .side-thumbs, .jfk-button[disabled], .feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, .g-hovercard > .run-text.run:first-child, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
@@ -40,7 +40,7 @@
     #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a {
         color: #167ac6; } 
     
-     .video-extras-sparkbar-likes {
+     .video-extras-sparkbar-likes, .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
         background: #167ac6; }
 
     .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img {
@@ -58,32 +58,23 @@
     .yt-lockup-deemphasized-text, .yt-lockup a.yt-lockup-deemphasized-text, .branded-page-module-title-v2 .branded-page-module-annotation-v2 {
         color: #767676; }
 
-    .branded-page-related-channels, .branded-page-related-channels h3 {
-        font-size: 13px; }
-
     .channel-header-profile-image-container {
         left: 15px; }
 
     .yt-lockup-title {
         margin-top: 0px; }
 
-    .guide-item, .guide-view-more {
+    .guide-item, .guide-view-more, #watch7-playlist-tray, #watch7-playlist-tray-mask {
         color: #222; }
 
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
         border-right: 1px solid #e8e8e8; box-shadow: none; }
 
-    [exp-modern-styles] a.yt-uix-button.yt-uix-button-epic-nav-item, [exp-modern-styles] button.yt-uix-button-epic-nav-item, [exp-modern-styles] .epic-nav-item {
+    [exp-modern-styles] a.yt-uix-button.yt-uix-button-epic-nav-item, [exp-modern-styles] button.yt-uix-button-epic-nav-item, [exp-modern-styles] .epic-nav-item, .exp-top-guide .guide-item, .exp-top-guide .guide-view-more, [exp-modern-styles] .epic-nav-item-heading, .branded-page-related-channels, .branded-page-related-channels h3 {
         font-size: 13px; }
-
-    [exp-modern-styles] .epic-nav-item-heading {
-        font-size: 13px; }
-
+    
     .exp-top-guide .guide-item .display-name {
         height: 14px; width: 140px; }
-
-    .exp-top-guide .guide-item, .exp-top-guide .guide-view-more {
-        font-size: 13px; }
 
     [exp-true-scrollable-guide] #appbar-guide-menu {
         overflow: overlay !important; }
@@ -97,14 +88,8 @@
     .site-center-aligned .yt-base-gutter {
         padding-right: 30px; }
 
-    #channel-search.expanded .search-button {
-        display: none !important }
-
     .yt-pl-thumb .sidebar {
         width: 43.75%;background: rgba(0,0,0,.85); }
-
-    .yt-pl-thumb .side-thumbs {
-        display: none !important; }
 
     .yt-pl-thumb .video-count-wrapper {
         height: 110px; text-transform: uppercase; color: #cfcfcf; }
@@ -202,9 +187,6 @@
     
 .yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img {
     opacity: 0.5;}
-    
-.jfk-button[disabled] {
-    display:none !important; }
 
 .compact-shelf .yt-uix-shelfslider-next, .compact-shelf .yt-uix-shelfslider-prev {
     width: 18px; height: 45px; }
@@ -242,7 +224,7 @@ opacity:.7}
 .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 opacity:.8}
     
-.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow{
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences, #footer .yt-uix-button-icon-footer-language{
 opacity:1}
 
 .network-icon-google {
@@ -260,14 +242,8 @@ opacity:1}
 .yt-alert-naked.yt-alert-success .icon, .yt-alert-small.yt-alert-success .icon {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -615px -121px; background-size: auto; width: 19px; height: 20px;}
 
-.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
-    background: #167ac6;}
-
 .yt-alert-naked .yt-alert-content {
     padding: 4px 13px 3px 0;}
-    
-.yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info{
-    background:#167ac6}
     
 .yt-alert-default.yt-alert-info .icon,.yt-alert-actionable.yt-alert-info .icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
@@ -277,9 +253,6 @@ opacity:1}
 
 .yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
     padding: 10px 0;}
-
-.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences {
-    opacity: 1; }
 
 .watch-extras-section .title,.watch-extras-section .content{
     font-size:11px; line-height:11px; margin-bottom:5px}
@@ -293,17 +266,8 @@ opacity:1}
 .yt-alert-default.yt-alert-warn .icon,.yt-alert-actionable.yt-alert-warn .icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
 
-#footer .yt-uix-button-icon-footer-language {
-    opacity: 1 !important; }
-
-.yt-subscription-button-subscriber-count-vertical-container {
-    display:none !important }
-
 .multirow-shelf .yt-uix-expander-head {
     position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
-
-.g-hovercard > .run-text.run:first-child, #FEsocial-guide-item {
-    display:none !important }
 
 #FEsubscriptions-guide-item > .guide-item.yt-uix-sessionlink.yt-valign {
     border-bottom: 1px solid #e2e2e2; margin-bottom: 8px; }
@@ -316,9 +280,6 @@ opacity:1}
 
 .channel-header #header-links {
     right: 15px; }
-
-#watch7-playlist-tray, #watch7-playlist-tray-mask {
-    background: #222;}
 
 #watch7-playlist-tray .video-list-item {
     border-top: unset; border-bottom: unset;text-shadow: unset !important;}
@@ -347,9 +308,6 @@ opacity:1}
 #watch7-playlist-tray .video-list-item:hover{
     background: #525252;}
 
-#watch-related-autoplay > .video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
-    font-weight: normal;}
-
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px; background-size: auto; width: 18px; height: 18px }
 
@@ -367,9 +325,6 @@ opacity:1}
 
 .yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
- 
-.guide-quick-filter, .guide-quick-filter-container {
-    display:none!important;}
 
 #FEhistory-guide-item:before {
     & when (@FooterLogo = 2015-2017) {
@@ -377,20 +332,11 @@ opacity:1}
     & when (@FooterLogo = 2017-2024) {
     content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px;font-weight:500;} }
 
-.guide-section:nth-of-type(1) > .guide-section-separator {
-    display:none !important}
-    
-#guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator {
-    display:none !important}
-
 [exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon {
     background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflvB63an.png) -52px -321px;}
 
 .yt-lockup .yt-lockup-meta b {
     color: #767676;font-weight:normal;}
-    
-.feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator {
-    display:none !important}
     
 [exp-true-scrollable-guide] .guide-section:last-of-type {
     padding-bottom: unset;}
