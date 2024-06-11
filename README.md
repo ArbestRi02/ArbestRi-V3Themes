@@ -1,4 +1,5 @@
-# ArbestRi-V3Themes
-V3 themes made by ArbestRi.
+# ArbestRi's V3 Themes
+This is where I make WIP userstyles and push beta versions of my styles. Release versions of my styles can be found on https://userstyles.world/user/ArbestRi02.
 # Themes as of now
 1. Late 2016 for StarTube + V3: Makes StarTube and V3 more faithful to late 2016 by changing icons, colors, pages and more.
+2. Material Search Bar for V3: The 2016 material search bar experiement from YouTube, brought into V3.
