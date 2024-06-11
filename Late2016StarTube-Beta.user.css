@@ -9,14 +9,14 @@
 @var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-    /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
+    /*NOTE: This code isn't really well organized or optimized, this is just mostly organizing based on how new the code is.*/
     h1,h2{
     font-weight:normal;}
     
     body, input, button, textarea {
     font-kerning: none;}
     
-    h3,h4,h5,h6 {
+    h3,h4,h5,h6,.category-header .category-title, .secondary-header-contents .nav-text {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -37,7 +37,7 @@
     .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a {
         color: #167ac6 !important; }
     
-    #watch7-sidebar .video-list-item a:hover .title {
+    #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a {
         color: #167ac6; } 
     
      .video-extras-sparkbar-likes {
@@ -124,7 +124,7 @@
     .pl-header .pl-header-details, .pl-header .pl-header-description {
         margin: 4px 0; line-height: 1.3em; }
 
-    .pl-header .pl-header-details {
+    .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity {
         color: #767676; }
 
     .pl-header-details>li:nth-of-type(1)>.run.run-link.g-hovercard>b {
@@ -132,9 +132,6 @@
 
     .pl-video {
         padding: 13px 15px; }
-
-    .pl-video-detail-container .pl-video-time {
-        color: #767676; }
 
     .pl-header .pl-header-title {
         color: #333; font-size: 20px; font-weight: 500; padding: 1px; padding-left: 0; vertical-align: middle; line-height: 33px; }
@@ -167,10 +164,7 @@
 .exp-new-subscribe-style .yt-subscription-button-subscriber-count-branded-horizontal {
     padding: 0 7px; color: #737373; }
 
-.video-list .video-list-item .description, .video-list .video-list-item .stat {
-    color: #767676; }
-
-#watch-related >li.video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
+#watch-related >li.video-list-item.related-list-item.context-data-item >.related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
     font-weight: normal !important; }
 
 .yt-ui-ellipsis {
@@ -187,9 +181,6 @@
     
 #watch-related .stat .run:first-child {
     display:none;}
-    
-.shelf-item .shelf-description {
-    color: #767676; }
     
 .branded-page-module-title-v2 .branded-page-module-title-text-v2 {
     font-size: 15px;}
@@ -362,9 +353,6 @@ opacity:1}
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px; background-size: auto; width: 18px; height: 18px }
 
-.secondary-header-contents .nav-text {
-    font-weight: 500;}
-
 .pl-video-owner.pl-video-detail:before {
     content: "by ";color: #767676;font-size: 12px;}
 
@@ -401,7 +389,7 @@ opacity:1}
 .yt-lockup .yt-lockup-meta b {
     color: #767676;font-weight:normal;}
     
-.feed-item-checkbox-container {
+.feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator {
     display:none !important}
     
 [exp-true-scrollable-guide] .guide-section:last-of-type {
@@ -418,4 +406,19 @@ opacity:1}
     
 #FEhistory-guide-item > .yt-valign.yt-uix-sessionlink.guide-item {
     margin-top:8px;}
+    
+.distiller_yt_headline > span.run-text.run:first-child:after {
+    content: '\002022'; margin: 0 2px;}
+    
+.distiller_yt_headline {
+    color: #555;}
+    
+.yt-gb-shelf-hero-content .description {
+    color: #555;font-size: 13px;}
+    
+.category-header .channel-count {
+    font-size: 13px;font-weight: normal;color: #767676;}
+    
+.category-header .category-title {
+    font-size: 18px;}
 }
