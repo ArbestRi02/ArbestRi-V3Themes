@@ -1,12 +1,11 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.1.0
+@version        1.1.1
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor less
 @var            select              FooterLogo                 "Footer logo"              ["2015-2017*", "2017-2024"]
-@var            checkbox                                          Guide         "Guide top spacing fix (for some configurations)"                                                                         0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
@@ -37,7 +36,7 @@
     .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a {
         color: #167ac6 !important; }
     
-    #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a {
+    a, #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a {
         color: #167ac6; } 
     
      .video-extras-sparkbar-likes, .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
@@ -64,7 +63,7 @@
     .yt-lockup-title {
         margin-top: 0px; }
 
-    .guide-item, .guide-view-more, #watch7-playlist-tray, #watch7-playlist-tray-mask {
+    .guide-item, .guide-view-more {
         color: #222; }
 
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
@@ -135,10 +134,6 @@
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 5.5px; }
-    
-    #guide #appbar-guide-menu {
-    & when (@Guide = 1) {
-        top: 0 !important; } }
 
 .stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
     background-image: unset; }
@@ -191,7 +186,7 @@
 .compact-shelf .yt-uix-shelfslider-next, .compact-shelf .yt-uix-shelfslider-prev {
     width: 18px; height: 45px; }
     
-.yt-lockup-meta-info>li:before {
+.yt-lockup-meta-info>li:before, .distiller_yt_headline > span.run-text.run:first-child:after {
     content: '\002022'; margin: 0 3px;}
 
 .yt-lockup-meta-info>li:first-child:before{
@@ -224,7 +219,7 @@ opacity:.7}
 .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 opacity:.8}
     
-.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences, #footer .yt-uix-button-icon-footer-language{
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, #footer .yt-uix-button-icon-footer-language, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover{
 opacity:1}
 
 .network-icon-google {
@@ -352,10 +347,7 @@ opacity:1}
     
 #FEhistory-guide-item > .yt-valign.yt-uix-sessionlink.guide-item {
     margin-top:8px;}
-    
-.distiller_yt_headline > span.run-text.run:first-child:after {
-    content: '\002022'; margin: 0 2px;}
-    
+
 .distiller_yt_headline {
     color: #555;}
     
@@ -367,4 +359,10 @@ opacity:1}
     
 .category-header .category-title {
     font-size: 18px;}
+    
+.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px;background-size:auto;width:18px;height:18px}
+    
+#watch7-playlist-tray, #watch7-playlist-tray-mask {
+    background: #222;}
 }
