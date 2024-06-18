@@ -378,3 +378,15 @@ opacity:1}
 .cardified-page .yt-card #watch7-creator-bar {
     margin-top: unset;}
 }
+@-moz-document url("https://www.youtube.com/feed/trending") {
+    .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
+        display:none}    
+
+    .feed-item-container .feed-item-main {
+        margin: 20px 0 0 51px;margin-left:unset;padding: unset}
+    
+    .cardified-page .feed-item-container {
+        border-bottom: unset;}
+    
+    .feed-item-container {
+    margin: -11px 15px;}}
