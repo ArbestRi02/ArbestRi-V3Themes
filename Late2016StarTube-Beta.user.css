@@ -33,7 +33,7 @@
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a, .yt-lockup-mini:hover .yt-lockup-title, .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name{
+    .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a, .yt-lockup-mini:hover .yt-lockup-title, .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name,.feed-header .metadata a:hover, .yt-uix-button-link{
         color: #167ac6 !important; }
     
     a, #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a, {
@@ -91,7 +91,7 @@
         width: 43.75%;background: rgba(0,0,0,.85); }
 
     .yt-pl-thumb .video-count-wrapper {
-        height: 90px; text-transform: uppercase; color: #cfcfcf; }
+        height: 90px; text-transform: uppercase; color: #cfcfcf;}
 
     .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content {
         width: 113%; text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
@@ -210,7 +210,7 @@ opacity:.7}
 .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 opacity:.8}
     
-.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, #footer .yt-uix-button-icon-footer-language, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover{
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, #footer .yt-uix-button-icon-footer-language, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover, [exp-search-text] #masthead-search-term::placeholder{
 opacity:1}
 
 .network-icon-google {
@@ -314,7 +314,7 @@ opacity:1}
 
 #FEhistory-guide-item:before {
     & when (@FooterLogo = 2015-2017) {
-    content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px;font-weight:500;}
+    content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px;font-weight:500}
     & when (@FooterLogo = 2017-2024) {
     content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px;font-weight:500;} }
 
@@ -354,6 +354,9 @@ opacity:1}
 .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences{
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px !important;background-size:auto;width:18px;height:18px}
     
+.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper {
+    height: 14px;}
+    
 #watch7-playlist-tray, #watch7-playlist-tray-mask {
     background: #222;}
 
@@ -364,5 +367,14 @@ opacity:1}
     content: '';display: block;margin: 0 31px;position: relative;top: -30px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -28px;background-size: auto;width: 24px;height: 24px;}
 
 .checkbox-on-off > label:after {
-    content: '';display: inline-block;margin-left: 4px;margin-right: 0;margin-top: -8px;margin-bottom: -2px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
+    content: '';cursor: pointer;display: inline-block;margin-left: 4px;margin-bottom:-1px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
+    
+.checkbox-on-off > label, .yt-uix-checkbox-on-off label {
+    cursor: default;}
+    
+#watch8-actions-row {
+    padding-bottom: 6px;}
+    
+.cardified-page .yt-card #watch7-creator-bar {
+    margin-top: unset;}
 }
