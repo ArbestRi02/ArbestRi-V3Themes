@@ -1,5 +1,5 @@
  /* ==UserStyle==
-@name           Skeumorphic Theme for 2014-2017 StarTube
+@name           Skeumorphic Theme for Cardified V3
 @namespace      github.com/ArbestRi02/
 @version        1.0.0
 @description    Makes cardified StarTube use skeuomorphic theming.
@@ -11,14 +11,14 @@
 .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
     background: linear-gradient(0deg, #cbcbcb91, white);border-bottom:unset;}
     
-.cardified-page #masthead-appbar-container, #masthead-search-terms {
+.cardified-page #masthead-appbar-container, #masthead-search-terms, .cardified-page #footer-container {
     background: linear-gradient(0deg, #fff, #cbcbcb91) !important;}
     
 #appbar-guide-menu {
     background: linear-gradient(0deg, white, #cbcbcb);box-shadow: -4px 15px 20px black !important;}
     
 #guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
-    background: linear-gradient(0deg, #773335, red) !important;}
+    background: linear-gradient(0deg, #773335, red) !important;box-shadow: 0px 0px 8px black;}
     
 .feed-item-container.browse-list-item-container {
     border-top: 1px solid #767676;background: linear-gradient(0deg, #bbbb, white);box-shadow: 1px 5px 20px black;}
@@ -33,19 +33,16 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);}
     
 .sb-on, .oz-embed-panel {
-    background: #ffffffa6;}
+    background: #ffffffa6;box-shadow: 0 2px 20px 6px #525252;}
     
-.main-notification-panel, .oz-static-loading, .sb-card-border {
-    background:unset;}
+.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item {
+    background:unset !important;}
     
-.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
+.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
     backdrop-filter: blur(4px);}
     
 .sb-card-body-arrow {
     display: none;}
-
-.yt-masthead-user-icon .yt-thumb {
-    border: 2px solid #bababa !important;}
     
 .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
     background: #00000073 !important;}
@@ -55,4 +52,28 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     
 #watch8-actions-row {
     background: linear-gradient(0deg, #c5c5c5, white);}
+    
+.cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar {
+    box-shadow: 0px 20px 20px rgb(0 0 0 / 32%) !important;}
+    
+.guide-section-separator {
+    border-bottom: 1px solid #b8b8b8;box-shadow: 0px 3px 10px black;}
+    
+.yt-masthead-user-icon .yt-thumb {
+    border-radius: 10%;}
+    
+#masthead-search-terms input {
+    box-shadow: inset 0 0 11px white;}
+    
+.appbar-mini-cinema #player.watch-medium:before {
+    background: linear-gradient(0deg, black, #3f3f3f);box-shadow: 0px 0px 20px black;}
+    
+.action-panel-content {
+    background: linear-gradient(0deg, #b0b5bd, transparent) !important;}
+    
+.watch-extras-section .content {
+    color: #4c4c4c;}
+    
+.yt-uix-button-default, .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover,.yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus, .metadata-inline {
+    background: linear-gradient(180deg, #fff 42.99%, #f3f3f3 51.62%, #d4d4d4 99.49%) !important;}
 }
