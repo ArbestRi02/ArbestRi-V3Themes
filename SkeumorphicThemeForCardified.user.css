@@ -60,7 +60,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     border-bottom: 1px solid #b8b8b8;box-shadow: 0px 3px 10px black;}
     
 .yt-masthead-user-icon .yt-thumb {
-    border-radius: 10%;}
+    border-radius: 10% !important;}
     
 #masthead-search-terms input {
     box-shadow: inset 0 0 11px white;}
@@ -74,6 +74,9 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 .watch-extras-section .content {
     color: #4c4c4c;}
     
-.yt-uix-button-default, .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover,.yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus, .metadata-inline {
+.yt-uix-button-default, .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover,.yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus, .metadata-inline, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribed-unbranded {
     background: linear-gradient(180deg, #fff 42.99%, #f3f3f3 51.62%, #d4d4d4 99.49%) !important;}
+    
+#yt-masthead-user .yt-uix-button-icon-bell {
+    left: 4px;}
 }
