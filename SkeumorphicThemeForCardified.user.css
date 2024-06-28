@@ -17,7 +17,7 @@
 #appbar-guide-menu {
     background: linear-gradient(0deg, white, #cbcbcb);box-shadow: -4px 15px 20px black !important;}
     
-#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
+#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover, .yt-alert-default.yt-alert-error, .yt-alert-actionable.yt-alert-error, .yt-alert-naked.yt-alert-error .yt-alert-icon, .yt-alert-small.yt-alert-error {
     background: linear-gradient(0deg, #773335, red) !important;box-shadow: 0px 0px 8px black;}
     
 .feed-item-container.browse-list-item-container {
@@ -48,10 +48,10 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     background: #00000073 !important;}
     
 .cardified-page #watch7-sidebar-contents {
-    background: linear-gradient(0deg, #c5c5c5, transparent);}
+    background: linear-gradient(0deg, #b0b5bd 30%, transparent);}
     
-#watch8-actions-row {
-    background: linear-gradient(0deg, #c5c5c5, white);}
+#watch8-actions-row, .distiller_yt_instance,#watch-discussion {
+    background: linear-gradient(0deg, #b0b5bd, white);}
     
 .cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar {
     box-shadow: 0px 20px 20px rgb(0 0 0 / 32%) !important;}
@@ -65,7 +65,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 #masthead-search-terms input {
     box-shadow: inset 0 0 11px white;}
     
-.appbar-mini-cinema #player.watch-medium:before {
+.appbar-mini-cinema #player.watch-medium:before, .watch-playlists-drawer li:hover, .context-back-link:hover,.guide-view-more:hover,#guide-container .guide-item:hover,#guide-container .guide-collection-item:hover .guide-item {
     background: linear-gradient(0deg, black, #3f3f3f);box-shadow: 0px 0px 20px black;}
     
 .action-panel-content {
@@ -79,4 +79,25 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     
 #yt-masthead-user .yt-uix-button-icon-bell {
     left: 4px;}
+
+#yt-masthead-user #sb-button-notify {
+    border: 1px solid #d3d3d3;}
+    
+.watch-playlists-drawer ul {
+    background: linear-gradient(0deg, #fff, #bbb 50%, #ededed 60%);}
+    
+.yt-alert .close {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflEXP50f.png) -47px -810px !important;}
+    
+#watch8-close .watch8-action-panel-dismiss {
+    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-watch8-vflCrfehN.png) 0 -140px !important;}
+    
+.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info {
+    background: linear-gradient(180deg, #0083ff, #0042b9, #002299);box-shadow: 0px 0px 8px black;}
+    
+.distiller_yt-sb-standin .box {
+    background: linear-gradient(0deg, #e3e3e3 10%, #d9d9d9 60%, white);}
+    
+.distiller_yt-sb-standin .callout-inner {
+    border: unset;}
 }
