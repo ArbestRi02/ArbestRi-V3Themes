@@ -15,13 +15,13 @@
     background: linear-gradient(0deg, #fff, #cbcbcb91) !important;}
     
 #appbar-guide-menu {
-    background: #ccc;box-shadow: -4px 15px 20px black !important;}
+    background: linear-gradient(0deg, white, #cbcbcb);box-shadow: -4px 15px 20px black !important;}
     
 #guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
     background: linear-gradient(0deg, #773335, red) !important;}
     
 .feed-item-container.browse-list-item-container {
-    border-top: 1px solid #767676;background: linear-gradient(0deg, #bbbb, white);}
+    border-top: 1px solid #767676;background: linear-gradient(0deg, #bbbb, white);box-shadow: 1px 5px 20px black;}
     
 body.cardified-page {
 background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
@@ -30,7 +30,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     background: linear-gradient(0deg, white, #b0b6be);}
     
 .video-thumb, .distiller_yt-thread_avatar {
-    box-shadow: 0 1px 1px rgba(0,0,0,.4);}
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);}
     
 .sb-on, .oz-embed-panel {
     background: #ffffffa6;}
@@ -49,4 +49,10 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     
 .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
     background: #00000073 !important;}
+    
+.cardified-page #watch7-sidebar-contents {
+    background: linear-gradient(0deg, #c5c5c5, transparent);}
+    
+#watch8-actions-row {
+    background: linear-gradient(0deg, #c5c5c5, white);}
 }
