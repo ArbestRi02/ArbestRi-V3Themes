@@ -9,17 +9,44 @@
 
 @-moz-document domain("www.youtube.com") {
 .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
-    background: linear-gradient(0deg, #cbcbcb, white);}
-#appbar-guide-menu, .cardified-page #masthead-appbar-container, #masthead-search-terms {
-    background: linear-gradient(0deg, white, #cbcbcb) !important;}
+    background: linear-gradient(0deg, #cbcbcb91, white);border-bottom:unset;}
+    
+.cardified-page #masthead-appbar-container, #masthead-search-terms {
+    background: linear-gradient(0deg, #fff, #cbcbcb91) !important;}
+    
+#appbar-guide-menu {
+    background: #ccc;box-shadow: -4px 15px 20px black !important;}
+    
 #guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
     background: linear-gradient(0deg, #773335, red) !important;}
+    
 .feed-item-container.browse-list-item-container {
     border-top: 1px solid #767676;background: linear-gradient(0deg, #bbbb, white);}
+    
 body.cardified-page {
 background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
+    
 .channel-header .secondary-header-contents {
-    background: linear-gradient(0deg, white, #b1b5bd);}
+    background: linear-gradient(0deg, white, #b0b6be);}
+    
 .video-thumb, .distiller_yt-thread_avatar {
     box-shadow: 0 1px 1px rgba(0,0,0,.4);}
+    
+.sb-on, .oz-embed-panel {
+    background: #ffffffa6;}
+    
+.main-notification-panel, .oz-static-loading, .sb-card-border {
+    background:unset;}
+    
+.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
+    backdrop-filter: blur(4px);}
+    
+.sb-card-body-arrow {
+    display: none;}
+
+.yt-masthead-user-icon .yt-thumb {
+    border: 2px solid #bababa !important;}
+    
+.watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
+    background: #00000073 !important;}
 }
