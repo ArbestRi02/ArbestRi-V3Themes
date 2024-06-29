@@ -1,4 +1,4 @@
- /* ==UserStyle==
+/* ==UserStyle==
 @name           Skeumorphic Theme for Cardified V3
 @namespace      github.com/ArbestRi02/
 @version        1.0.0
@@ -9,7 +9,7 @@
 
 @-moz-document domain("www.youtube.com") {
 .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
-    background: linear-gradient(0deg, #cbcbcb91, white);border-bottom:unset;}
+    background: linear-gradient(0deg, #cbcbcb91, white);border-bottom:unset;box-shadow: 0px 1px 20px #545454;}
     
 .cardified-page #masthead-appbar-container, #masthead-search-terms, .cardified-page #footer-container {
     background: linear-gradient(0deg, #fff, #cbcbcb91) !important;}
@@ -17,8 +17,11 @@
 #appbar-guide-menu {
     background: linear-gradient(0deg, white, #cbcbcb);box-shadow: -4px 15px 20px black !important;}
     
-#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover, .yt-alert-default.yt-alert-error, .yt-alert-actionable.yt-alert-error, .yt-alert-naked.yt-alert-error .yt-alert-icon, .yt-alert-small.yt-alert-error {
+.yt-alert-default.yt-alert-error, .yt-alert-actionable.yt-alert-error, .yt-alert-naked.yt-alert-error .yt-alert-icon, .yt-alert-small.yt-alert-error {
     background: linear-gradient(0deg, #773335, red) !important;box-shadow: 0px 0px 8px black;}
+    
+#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
+    background: repeating-linear-gradient(120deg, #ff474d 0%, #c70000 10%) !important;}
     
 .feed-item-container.browse-list-item-container {
     border-top: 1px solid #767676;box-shadow: 1px 5px 20px black;}
@@ -100,4 +103,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
     
 .distiller_yt-sb-standin .callout-inner {
     border: unset;}
+    
+.yt-shelf-grid-item .ux-thumb-wrap {
+    box-shadow: 0px 1px 11px #000;}
 }
