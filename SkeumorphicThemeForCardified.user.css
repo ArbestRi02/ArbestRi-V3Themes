@@ -21,7 +21,7 @@
     background: linear-gradient(0deg, #773335, red) !important;box-shadow: 0px 0px 8px black;}
     
 .feed-item-container.browse-list-item-container {
-    border-top: 1px solid #767676;background: linear-gradient(0deg, #bbbb, white);box-shadow: 1px 5px 20px black;}
+    border-top: 1px solid #767676;box-shadow: 1px 5px 20px black;}
     
 body.cardified-page {
 background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
@@ -35,7 +35,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 .sb-on, .oz-embed-panel {
     background: #ffffffa6;box-shadow: 0 2px 20px 6px #525252;}
     
-.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item {
+.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander {
     background:unset !important;}
     
 .channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
@@ -68,7 +68,7 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 .appbar-mini-cinema #player.watch-medium:before, .watch-playlists-drawer li:hover, .context-back-link:hover,.guide-view-more:hover,#guide-container .guide-item:hover,#guide-container .guide-collection-item:hover .guide-item {
     background: linear-gradient(0deg, black, #3f3f3f);box-shadow: 0px 0px 20px black;}
     
-.action-panel-content {
+.action-panel-content, .feed-item-container.browse-list-item-container {
     background: linear-gradient(0deg, #b0b5bd, transparent) !important;}
     
 .watch-extras-section .content {
