@@ -8,10 +8,10 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com") {
-.cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
+#yt-masthead-container, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
     background: linear-gradient(0deg, #aaaaaa91, #ffffffc4);border-bottom:unset;box-shadow: 0px 1px 20px #545454;}
     
-.cardified-page #masthead-appbar-container, #masthead-search-terms, .cardified-page #footer-container {
+.cardified-page #masthead-appbar-container, #masthead-search-terms, #footer-container {
     background: linear-gradient(0deg, #ffffffc4, #aaaaaa91) !important;}
     
 #appbar-guide-menu {
@@ -25,8 +25,8 @@
     
 .feed-item-container.browse-list-item-container {
     border-top: 1px solid #767676;box-shadow: 1px 5px 20px black;}
-    
-body.cardified-page {
+  
+body {
 background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
     
 .channel-header .secondary-header-contents {
@@ -38,10 +38,10 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 .sb-on, .oz-embed-panel {
     background: #ffffffa6;box-shadow: 0 2px 20px 6px #525252;}
     
-.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander {
+.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander, #guide-main, #watch-context-container {
     background:unset !important;}
     
-.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
+.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
     backdrop-filter: blur(4px);}
     
 .sb-card-body-arrow {
@@ -53,10 +53,10 @@ background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Th
 .cardified-page #watch7-sidebar-contents {
     background: linear-gradient(0deg, #b0b5bd 30%, transparent);}
     
-#watch8-actions-row, .distiller_yt_instance,#watch-discussion {
+#watch8-actions-row, .distiller_yt_instance,#watch-discussion, #watch7-notification-area {
     background: linear-gradient(0deg, #b0b5bd, white);}
     
-.cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar, body.cardified-page #masthead-expanded-container {
+.cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar, #masthead-expanded-container {
     box-shadow: 0px 20px 20px rgb(0 0 0 / 32%) !important;}
     
 .guide-section-separator {
@@ -124,4 +124,10 @@ body.cardified-page #masthead-expanded-container {
     
 .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
     background: linear-gradient(180deg, #25c700, #006e26, #00d43f);box-shadow: 0px 0px 8px black;}
+    
+li.guide-section h3 {
+    color: #4d4d4d;}
+    
+#watch7-action-buttons {
+    background:#b0b5bd;}
 }
