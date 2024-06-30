@@ -1,127 +1,392 @@
-/* ==UserStyle==
-@name           Skeumorphic Theme for Cardified V3
+ /* ==UserStyle==
+@name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.0.2
-@description    Makes cardified StarTube use skeuomorphic theming.
+@version        1.1.2
+@description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
-@preprocessor   less
+@preprocessor less
+@var            select              FooterLogo                 "Footer logo"              ["2015-2017*", "2017-2024"]
 ==/UserStyle== */
-
 @-moz-document domain("www.youtube.com") {
-.cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
-    background: linear-gradient(0deg, #aaaaaa91, #ffffffc4);border-bottom:unset;box-shadow: 0px 1px 20px #545454;}
+    /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
+    h1,h2, #watch-related-autoplay > .video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b{
+    font-weight:normal;}
     
-.cardified-page #masthead-appbar-container, #masthead-search-terms, .cardified-page #footer-container {
-    background: linear-gradient(0deg, #ffffffc4, #aaaaaa91) !important;}
+    body, input, button, textarea {
+    font-kerning: none;}
     
-#appbar-guide-menu {
-    background: linear-gradient(0deg, #fff, #cbcbcb) !important;box-shadow: -4px 15px 20px black !important;}
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a {
+    font-weight: 500}
+
+    .cardified-page .branded-page-related-channels h2 {
+        font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
+
+    [exp-modern-styles] .channel-header .primary-header-contents {
+        padding: 17px 15px 5px; }
+
+    #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
+        background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
+
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-pl-thumb .side-thumbs, .jfk-button[disabled], .feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, .g-hovercard > .run-text.run:first-child, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator, .distiller_stream-options .right-options, #watch-related .stat .run:first-child, .yt-lockup-meta-info>li:first-child:before {
+        display: none !important }
+
+    .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
+        border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
+
+    .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a, .yt-lockup-mini:hover .yt-lockup-title, .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name,.feed-header .metadata a:hover, .yt-uix-button-link{
+        color: #167ac6 !important; }
     
-.yt-alert-default.yt-alert-error, .yt-alert-actionable.yt-alert-error, .yt-alert-naked.yt-alert-error .yt-alert-icon, .yt-alert-small.yt-alert-error {
-    background: linear-gradient(180deg, red, #aa0005, red) !important;box-shadow: 0px 0px 8px black;}
+    a, #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a, {
+        color: #167ac6; } 
     
-#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
-    background: repeating-linear-gradient(120deg, #ff474d 0%, #c70000 10%) !important;box-shadow: 0px 0px 8px black;}
+     .video-extras-sparkbar-likes, .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+        background: #167ac6; }
+
+    .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img {
+        background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflNVER5Q.webp) -442px -24px; }
+
+    .exp-new-logo #footer-logo img {
+        & when (@FooterLogo = 2015-2017) {
+        background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -637px 0; }
+        & when (@FooterLogo = 2017-2024) {
+        background: no-repeat url(//www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png); background-size: 100px 30px; width: 100px; } }
+
+    .yt-lockup {
+        color: #767676; line-height: 1.3em; position: relative; }
+
+    .yt-lockup-deemphasized-text, .yt-lockup a.yt-lockup-deemphasized-text, .branded-page-module-title-v2 .branded-page-module-annotation-v2, .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity {
+        color: #767676; }
+
+    .channel-header-profile-image-container {
+        left: 15px; }
+
+    .yt-lockup-title {
+        margin-top: unset; }
+
+    .guide-item, .guide-view-more {
+        color: #222; }
+
+    .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
+        border-right: 1px solid #e8e8e8; box-shadow: none; }
+
+    [exp-modern-styles] a.yt-uix-button.yt-uix-button-epic-nav-item, [exp-modern-styles] button.yt-uix-button-epic-nav-item, [exp-modern-styles] .epic-nav-item, .exp-top-guide .guide-item, .exp-top-guide .guide-view-more, [exp-modern-styles] .epic-nav-item-heading, .branded-page-related-channels, .branded-page-related-channels h3 {
+        font-size: 13px; }
     
-.feed-item-container.browse-list-item-container {
-    border-top: 1px solid #767676;box-shadow: 1px 5px 20px black;}
+    .exp-top-guide .guide-item .display-name {
+        height: 14px; width: 140px; }
+
+    [exp-true-scrollable-guide] #appbar-guide-menu {
+        overflow: overlay !important; }
+
+    .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
+        padding: 0 9px 0 4.5px; }
+
+    [exp-modern-topbar] #sb-button-notify {
+        margin-right: 8px; }
+
+    .site-center-aligned .yt-base-gutter {
+        padding-right: 30px; }
+
+    .yt-pl-thumb .sidebar {
+        width: 43.75%;background: rgba(0,0,0,.85); }
+
+    .yt-pl-thumb .video-count-wrapper {
+        height: 90px; text-transform: uppercase; color: #cfcfcf;}
+
+    .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content {
+        width: 113%; text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
+
+    .yt-pl-thumb .video-count-wrapper .text-label {
+        font-size: 10px; line-height: 20px; }
+
+    .yt-pl-thumb .video-count-wrapper .count-label {
+        font-size: 18px; font-weight: normal; }
+
+    .yt-pl-thumb-link .yt-pl-thumb-overlay {
+        min-width: 170px; }
+
+    .pl-header .pl-header-details, .pl-header .pl-header-description {
+        margin: 4px 0; line-height: 1.3em; }
+
+    .pl-header-details>li:nth-of-type(1)>.run.run-link.g-hovercard>b {
+        font-weight: normal; color: #767676; }
+
+    .pl-video {
+        padding: 13px 15px; }
+
+    .pl-header .pl-header-title {
+        color: #333; font-size: 20px; font-weight: 500; padding: 1px; padding-left: 0; vertical-align: middle; line-height: 33px; }
     
-body.cardified-page {
-background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
+    .pl-header .yt-uix-button-icon-playlist-like {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -812px -38px; width: 13px; height: 13px; }
     
+    .pl-video-detail-container .pl-video-detail {
+    line-height: 23px;}
+    
+    .pl-video-detail-container .pl-video-owner a {
+    color: #767676; font-size: 12px;}
+    
+    .pl-video-list>li:before {
+    color: #767676; margin-right: 2px; }
+
+    .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
+        padding: 0 5.5px; box-shadow: unset; }
+    
+    .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded:hover {
+    border-color: #bfbfbf; background-color: #f6f6f6}
+
+.stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
+    background-image: unset; }
+
+[exp-modern-styles] .oz-expander-arrow-down {
+    margin-top: 10px !important; }
+
+.exp-new-subscribe-style .yt-subscription-button-subscriber-count-branded-horizontal {
+    padding: 0 7px; color: #737373; }
+
+#watch-related >li.video-list-item.related-list-item.context-data-item >.related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
+    font-weight: normal !important; }
+
+.yt-ui-ellipsis {
+    line-height: 1.25em; }
+    
+.video-player-view-component .view-count .content-item-time-created {
+    margin-left: 0; }
+
+.yt-uix-button-icon-play-all {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -812px -285px; width: 16px; height: 16px; }
+
+.branded-page-module-title-v2 .shelves-play {
+    margin-left: 5px; height: 18px; }
+    
+.branded-page-module-title-v2 .branded-page-module-title-text-v2 {
+    font-size: 15px;}
+    
+.feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-next, .feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-prev {
+    right: -15px; height: 80px;}
+    
+.compact-shelf .yt-uix-button-shelf-slider-pager {
+    top: unset; bottom: 99px;}
+
+.feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-next, .feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-prev {
+    width: 15px; height: 60px;}
+
+.feed-item-container.browse-list-item-container .compact-shelf .yt-uix-shelfslider-prev {
+    left: -15px;}
+
+#watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -84px; width: 20px; height: 20px;}
+    
+.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off > label:after {
+    opacity: 0.5;}
+
+.compact-shelf .yt-uix-shelfslider-next, .compact-shelf .yt-uix-shelfslider-prev {
+    width: 18px; height: 45px; }
+    
+.yt-lockup-meta-info>li:before, .distiller_yt_headline > span.run-text.run:first-child:after {
+    content: '\002022'; margin: 0 3px;}
+
+.yt-lockup-meta-info>li:last-child, .yt-lockup-grid .yt-lockup-meta-info>li{
+    margin-right:unset}
+    
+#transcript.watch8-menuitem:before {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
+
 .channel-header .secondary-header-contents {
-    background: linear-gradient(0deg, white, #b0b6be);}
-    
-.video-thumb, .distiller_yt-thread_avatar {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);}
-    
-.sb-on, .oz-embed-panel {
-    background: #ffffffa6;box-shadow: 0 2px 20px 6px #525252;}
-    
-.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander {
-    background:unset !important;}
-    
-.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
-    backdrop-filter: blur(4px);}
-    
-.sb-card-body-arrow {
-    display: none;}
-    
-.watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
-    background: #00000073 !important;}
-    
-.cardified-page #watch7-sidebar-contents {
-    background: linear-gradient(0deg, #b0b5bd 30%, transparent);}
-    
-#watch8-actions-row, .distiller_yt_instance,#watch-discussion {
-    background: linear-gradient(0deg, #b0b5bd, white);}
-    
-.cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar, body.cardified-page #masthead-expanded-container {
-    box-shadow: 0px 20px 20px rgb(0 0 0 / 32%) !important;}
-    
-.guide-section-separator {
-    border-bottom: 1px solid #b8b8b8;box-shadow: 0px 3px 10px black;}
-    
-.yt-masthead-user-icon .yt-thumb {
-    border-radius: 10% !important;}
-    
-#masthead-search-terms input {
-    box-shadow: inset 0 0 11px white;}
-    
-.appbar-mini-cinema #player.watch-medium:before, .watch-playlists-drawer li:hover, .context-back-link:hover,.guide-view-more:hover,#guide-container .guide-item:hover,#guide-container .guide-collection-item:hover .guide-item, .yt-uix-button-menu li:hover, .yt-uix-button-menu .yt-uix-button-menu-item.selected,.yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item,.yt-uix-button-menu .yt-uix-button-menu-item:hover {
-    background: linear-gradient(0deg, black, #3f3f3f);box-shadow: 0px 0px 20px black;}
-    
-.action-panel-content, .feed-item-container.browse-list-item-container, .branded-page-v2-subnav-container {
-    background: linear-gradient(0deg, #b0b5bd, transparent) !important;}
-    
-.watch-extras-section .content {
-    color: #4c4c4c;}
-    
-.yt-uix-button-default, .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover,.yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus, .metadata-inline, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribed-unbranded, #st-account-menu-details a, .yt-uix-button-menu, .yt-uix-form-input-select {
-    background: linear-gradient(180deg, #fff 42.99%, #f3f3f3 51.62%, #d4d4d4 99.49%) !important;}
-    
-#yt-masthead-user .yt-uix-button-icon-bell {
-    left: 4px;}
+    padding: 0 15px;}
 
-#yt-masthead-user #sb-button-notify {
-    border: 1px solid #d3d3d3;}
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
     
-.watch-playlists-drawer ul {
-    background: linear-gradient(0deg, #fff, #bbb 50%, #ededed 60%);}
+.yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow{
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
     
-.yt-alert .close {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflEXP50f.png) -47px -810px !important;}
+.yt-uix-button-icon-c4-grid-flow,.yt-uix-button-icon-c4-list-flow{
+opacity:.6}
     
-#watch8-close .watch8-action-panel-dismiss {
-    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-watch8-vflCrfehN.png) 0 -140px !important;}
+.yt-uix-button:not(.yt-uix-button-toggled):hover .yt-uix-button-icon-c4-grid-flow,.yt-uix-button:not(.yt-uix-button-toggled):hover .yt-uix-button-icon-c4-list-flow{
+opacity:.7}
     
-.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info {
-    background: linear-gradient(180deg, #0083ff, #0042b9, #0083ff);box-shadow: 0px 0px 8px black;}
+.yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
+opacity:.8}
     
-.distiller_yt-sb-standin .box {
-    background: linear-gradient(0deg, #e3e3e3 10%, #d9d9d9 60%, white);}
-    
-.distiller_yt-sb-standin .callout-inner {
-    border: unset;}
-    
-.yt-shelf-grid-item .ux-thumb-wrap {
-    box-shadow: 0px 1px 11px #000;}
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, #footer .yt-uix-button-icon-footer-language, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover, [exp-search-text] #masthead-search-term::placeholder{
+opacity:1}
 
-.yt-uix-checkbox-on-off label {
-    background: linear-gradient(180deg, #b4b4b4, #898989);}
+.network-icon-google {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-favicons-vflWPH7Ai.png);}
+
+.exp-top-guide .guide-item .thumb {
+    margin-left: 9px;}
+
+#content-sort-menu {
+    margin-right: 5px;}
+
+.yt-lockup-meta, .yt-lockup-description, .yt-lockup-badges {
+    margin: 3px 0 0;}
+
+.yt-alert-naked.yt-alert-success .icon, .yt-alert-small.yt-alert-success .icon {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -615px -121px; background-size: auto; width: 19px; height: 20px;}
+
+.yt-alert-naked .yt-alert-content {
+    padding: 4px 13px 3px 0;}
     
-body.cardified-page #masthead-expanded-container {
-    background: linear-gradient(180deg, #c0c2c5, white);}
+.yt-alert-default.yt-alert-info .icon,.yt-alert-actionable.yt-alert-info .icon{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
     
-#masthead-positioner #yt-masthead #appbar-guide-button {
-    background:white !important}
+.yt-alert-naked.yt-alert-info .icon,.yt-alert-small.yt-alert-info .icon{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; background-size:auto; width:20px; height:20px}
+
+.yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
+    padding: 10px 0;}
+
+.watch-extras-section .title,.watch-extras-section .content{
+    font-size:11px; line-height:11px; margin-bottom:5px}
+
+.watch-extras-section .title{
+    float:left; font-weight:500; width:100px; margin-right:10px}
+
+.yt-alert-default.yt-alert-error .icon{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
+
+.yt-alert-default.yt-alert-warn .icon,.yt-alert-actionable.yt-alert-warn .icon{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
+
+.multirow-shelf .yt-uix-expander-head {
+    position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
+
+#FEsubscriptions-guide-item > .guide-item.yt-uix-sessionlink.yt-valign {
+    border-bottom: 1px solid #e2e2e2; margin-bottom: 8px; }
+
+.pl-header .yt-uix-button-icon-gear {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
+
+.yt-thumb-27, #yt-masthead-user .yt-masthead-user-icon {
+    border-radius: 50%; }
+
+.channel-header #header-links {
+    right: 15px; }
+
+#watch7-playlist-tray .video-list-item {
+    border-top: unset; border-bottom: unset;text-shadow: unset !important;}
+
+#watch7-playlist-tray .video-list-item .title {
+    font-weight: normal;color: #cacaca !important;text-shadow: unset !important;}
+
+.video-list-item .stat {
+    color: #767676;font-size: 11px !important;}
+
+#watch7-playlist-tray .playlist-bar-item-playing {
+    border-color: unset; background: #3a3a3a;height: 61px;}
     
-.yt-uix-button-primary, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus {
-    background: linear-gradient(180deg, #0088ff, #0074ff 40%, #40b7ff);}
+.video-list-item.yt-uix-scroller-scroll-unit.playlist-bar-item-playing > .spf-link > .stat.count {
+    & when (@FooterLogo = 2015-2017) {
+    color:#c03636 !important; }
+    & when (@FooterLogo = 2017-2024) {
+    color:#f00 !important; } }
+
+#watch7-playlist-tray .video-list-item .count {
+    font-weight: normal;color: #b8b8b8;font-size: 10px !important;}
+
+#watch7-playlist-tray .video-list-item .ux-thumb-wrap {
+    margin-left: -10px;}
+
+#watch7-playlist-tray .video-list-item:hover{
+    background: #525252;}
+
+.creator-bar-item .yt-uix-button-icon-audio {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px; background-size: auto; width: 18px; height: 18px }
+
+.pl-video-owner.pl-video-detail:before {
+    content: "by ";color: #767676;font-size: 12px;}
+
+#c4-about-tab:before {
+    content: "Description";font-weight:500;margin-left: 10px; }
+
+.branded-page-v2-primary-col .about-description.branded-page-box-padding {
+    padding: 10px;}
+
+.yt-pl-thumb-overlay img {
+    width: 12px; height: 10px;}
+
+.yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
+
+#FEhistory-guide-item:before {
+    & when (@FooterLogo = 2015-2017) {
+    content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px;font-weight:500}
+    & when (@FooterLogo = 2017-2024) {
+    content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px;font-weight:500;} }
+
+[exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon {
+    background-position: -52px -321px;}
+
+.yt-lockup .yt-lockup-meta b {
+    color: #767676;font-weight:normal;}
     
-.feed-item-container.browse-list-item-container {
-    padding: 0 18px !important;margin: 0 !important;}
+[exp-true-scrollable-guide] .guide-section:last-of-type {
+    padding-bottom: unset;}
     
-.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
-    background: linear-gradient(180deg, #25c700, #006e26, #00d43f);box-shadow: 0px 0px 8px black;}
+.oz-sprite.oz-page-verified{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -442px -197px;background-size:auto;width:12px;height:9px}
+    
+.oz-sprite.oz-page-verified:hover{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -58px -248px;background-size:auto;width:12px;height:9px}
+    
+.branded-page-module-title-v2 .branded-page-module-avatar {
+    margin-top: 1px;}
+    
+#FEhistory-guide-item > .yt-valign.yt-uix-sessionlink.guide-item {
+    margin-top:8px;}
+
+.distiller_yt_headline, .yt-gb-shelf-hero-content .description {
+    color: #555;}
+    
+.yt-gb-shelf-hero-content .description, .category-header .channel-count {
+    font-size: 13px;}
+    
+.category-header .channel-count {
+    font-weight: normal;color: #767676;}
+    
+.category-header .category-title {
+    font-size: 18px;}
+    
+.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences{
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px !important;background-size:auto;width:18px;height:18px}
+    
+.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper {
+    height: 14px;}
+    
+#watch7-playlist-tray, #watch7-playlist-tray-mask {
+    background: #222;}
+
+#watch7-views-info .video-extras-sparkbars.yt-uix-tooltip {
+    margin: -1px 0 -2px 0;}
+    
+.yt-pl-thumb .video-count-wrapper:after {
+    content: '';display: block;margin: 0 31px;position: relative;top: -30px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -28px;background-size: auto;width: 24px;height: 24px;}
+
+.checkbox-on-off > label:after {
+    content: '';cursor: pointer;display: inline-block;margin-left: 4px;margin-bottom:-1px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
+    
+.checkbox-on-off > label, .yt-uix-checkbox-on-off label {
+    cursor: default;}
+    
+#watch8-actions-row {
+    padding-bottom: 6px;}
+    
+.cardified-page .yt-card #watch7-creator-bar {
+    margin-top: unset;}
 }
+@-moz-document url("https://www.youtube.com/feed/trending") {
+    .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
+        display:none}    
+
+    .feed-item-container .feed-item-main {
+        margin: 20px 0 0 51px;margin-left:unset;padding: unset}
+    
+    .cardified-page .feed-item-container {
+        border-bottom: unset;}
+    
+    .feed-item-container {
+    margin: -11px 15px;}}
