@@ -1,21 +1,20 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.1.2
+@version        1.1.3
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
-@preprocessor less
+@preprocessor   less
 @var            select              FooterLogo                 "Footer logo"              ["2015-2017*", "2017-2024"]
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-    /*NOTE: This code isn't really well organized, this is just mostly organizing based on how new the code is.*/
     h1,h2, #watch-related-autoplay > .video-list-item.related-list-item.context-data-item > .related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b{
     font-weight:normal;}
     
     body, input, button, textarea {
     font-kerning: none;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -33,13 +32,13 @@
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    .yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a, .yt-lockup-mini:hover .yt-lockup-title, .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name,.feed-header .metadata a:hover, .yt-uix-button-link{
+    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name,.feed-header .metadata a:hover, .yt-uix-button-link{
         color: #167ac6 !important; }
     
     a, #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a, {
         color: #167ac6; } 
     
-     .video-extras-sparkbar-likes, .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+     .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
         background: #167ac6; }
 
     .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img {
@@ -63,9 +62,6 @@
     .yt-lockup-title {
         margin-top: unset; }
 
-    .guide-item, .guide-view-more {
-        color: #222; }
-
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
         border-right: 1px solid #e8e8e8; box-shadow: none; }
 
@@ -83,9 +79,6 @@
 
     [exp-modern-topbar] #sb-button-notify {
         margin-right: 8px; }
-
-    .site-center-aligned .yt-base-gutter {
-        padding-right: 30px; }
 
     .yt-pl-thumb .sidebar {
         width: 43.75%;background: rgba(0,0,0,.85); }
@@ -183,11 +176,8 @@
 .compact-shelf .yt-uix-shelfslider-next, .compact-shelf .yt-uix-shelfslider-prev {
     width: 18px; height: 45px; }
     
-.yt-lockup-meta-info>li:before, .distiller_yt_headline > span.run-text.run:first-child:after {
+.distiller_yt_headline > span.run-text.run:first-child:after {
     content: '\002022'; margin: 0 3px;}
-
-.yt-lockup-meta-info>li:last-child, .yt-lockup-grid .yt-lockup-meta-info>li{
-    margin-right:unset}
     
 #transcript.watch8-menuitem:before {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
@@ -260,9 +250,6 @@ opacity:1}
 
 .pl-header .yt-uix-button-icon-gear {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
-
-.yt-thumb-27, #yt-masthead-user .yt-masthead-user-icon {
-    border-radius: 50%; }
 
 .channel-header #header-links {
     right: 15px; }
@@ -367,16 +354,22 @@ opacity:1}
     content: '';display: block;margin: 0 31px;position: relative;top: -30px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -28px;background-size: auto;width: 24px;height: 24px;}
 
 .checkbox-on-off > label:after {
-    content: '';cursor: pointer;display: inline-block;margin-left: 4px;margin-bottom:-1px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
+    content: '';cursor: pointer;display: inline-block;margin-left: 4px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
     
 .checkbox-on-off > label, .yt-uix-checkbox-on-off label {
     cursor: default;}
     
 #watch8-actions-row {
-    padding-bottom: 6px;}
+    padding-bottom: 7px;}
     
 .cardified-page .yt-card #watch7-creator-bar {
     margin-top: unset;}
+    
+.annotation.annotation-type-text .inner-text {
+    font-family: "Arial" !important;}
+
+.distiller_yt-post_comment_section .distiller_yt-post-option-menu {
+    background:unset;}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
