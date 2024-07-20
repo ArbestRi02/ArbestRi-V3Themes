@@ -369,7 +369,7 @@ opacity:1}
     font-family: "Arial" !important;}
 
 .distiller_yt-post_comment_section .distiller_yt-post-option-menu {
-    background:unset;}
+    background:unset;visibility: visible !important;}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
