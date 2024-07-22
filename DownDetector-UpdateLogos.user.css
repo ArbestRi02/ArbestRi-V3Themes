@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           Update DownDetector Logos
+@namespace      https://github.com/ArbestRi02
+@version        1.0
+@description    Show newer versions of logos in DownDetector. Logos sourced from Logopedia.
+@author         ArbestRi
+==/UserStyle== */
+
+@-moz-document domain("downdetector.com") {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/13695/Reddit_logo.svg.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/5/54/Reddit_2023.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/78131/att.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/2/29/AT%26T_2016.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/15f97/amazon.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/a/a7/Amazon2024.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/5d878/Discord_logo.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/8/86/Discord_logo_2021.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/e9e69/FB-f-Logo__blue_512.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/8/82/Facebook_icon_2023.svg");width:40%}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/2f758/Google-new_19.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/31ca8/Google-new_19.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/2/28/Google_2015.svg")}
+
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/6dee8/Amazon_Prime_Video_logo.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/7/75/Primevideo2024long.png")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/0686a/Disney_logo_2.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/31da9/Disney_logo_2.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/f/f8/Disney%2B_%282024%29.svg")}
+}
