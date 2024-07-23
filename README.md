@@ -5,3 +5,4 @@ This is where I make WIP userstyles and push beta versions of my styles. Release
 2. Material Search Bar for V3: The 2016 material search bar experiement from YouTube, brought into V3.
 3. Skeumorphic Theme for V3: I don't work on it anymore.
 4. Update DownDetector Logos: Not a V3 theme, but a style that updates the plenty of outdated logos on DownDetector's home page. Images are from Logopedia.
+5. Glass Masthead and Guide for YouTube: Adds glass effects to Polymer YouTube's search box, masthead and guide.
