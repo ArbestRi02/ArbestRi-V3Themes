@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Glass Masthead and Guide for YouTube
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Glass effects on regular YouTube's masthead, search box, and guide.
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    #background.ytd-masthead, #contentContainer.tp-yt-app-drawer, #container.ytd-searchbox, #search-icon-legacy.ytd-searchbox {
+    background: #ffffff82;
+    backdrop-filter: blur(4px);}
+    
+    #guide-content.ytd-app, #scrim.tp-yt-app-drawer {
+        background:unset;
+    }
+}
