@@ -1,33 +1,82 @@
 /* ==UserStyle==
 @name           Update DownDetector Logos
 @namespace      https://github.com/ArbestRi02
-@version        1.0
+@version        1.0.0
 @description    Show newer versions of logos in DownDetector. Logos sourced from Logopedia.
 @author         ArbestRi
 ==/UserStyle== */
 
 @-moz-document domain("downdetector.com") {
-img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/13695/Reddit_logo.svg.png"] {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/13695/Reddit_logo.svg.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/01f09/Reddit_logo.svg.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/5/54/Reddit_2023.svg")}
     
-img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/78131/att.png"] {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/78131/att.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/806fe/att.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/2/29/AT%26T_2016.svg")}
     
-img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/15f97/amazon.png"] {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/15f97/amazon.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/01741/amazon.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/a/a7/Amazon2024.svg")}
     
-img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/5d878/Discord_logo.png"] {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/5d878/Discord_logo.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/8300f/Discord_logo.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/8/86/Discord_logo_2021.svg")}
-    
+/* this only changes icon on the home page */    
 img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/e9e69/FB-f-Logo__blue_512.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/8/82/Facebook_icon_2023.svg");width:40%}
     
 img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/2f758/Google-new_19.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/31ca8/Google-new_19.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/2/28/Google_2015.svg")}
 
-img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/6dee8/Amazon_Prime_Video_logo.png"] {
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/6dee8/Amazon_Prime_Video_logo.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/a9088/Amazon_Prime_Video_logo.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/7/75/Primevideo2024long.png")}
     
 img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/0686a/Disney_logo_2.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/31da9/Disney_logo_2.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/f/f8/Disney%2B_%282024%29.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/19476/deviantart.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/7ce66/deviantart.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/3/31/DeviantArt_2019.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/264b3/Bumble_logo.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/4/46/Bumble_App_icon_%282024%29.svg");width: 30%;}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/05683/google_drive_logo_3963_15.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/7/78/GoogleDrive_2020.svg");width:30%;}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/092f7/logo-google-play-vetor.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/d7506/logo-google-play-vetor.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/4/4d/Google_Play_%282022%29.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/63df3/crunchyroll_1.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/90c06/crunchyroll_1.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/b/b2/CRUNCHYROLL-2024-HORIZONTAL.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/60a0f/Nord-medium-150x150.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/2f640/Nord-medium-150x150.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/b/b2/NordVPN_new.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/7975c/T_Mobile.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/1608b/T_Mobile.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/9/98/T-Mobile_2022.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/6beb6/LinkedIn.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/b3b71/LinkedIn.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/a/aa/LinkedIn_2021.svg")}
+    
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/e3f83/Microsoft_Teams_logo.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg");width:40%;}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/1f4e1/boost-mobile.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/f1b3e/boost-mobile.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/e/ea/Boost_Mobile_2024_1.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/4a296/dish.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/7fcfc/dish.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/6/6a/Dish_Logo.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/94ea8/github-logo.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/97642/github-logo.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/0/07/GitHub_2013.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/61834/image18.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/63dbc/image18.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/1/15/Microsoft_Azure_stacked.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/0101b/Sling-TV-logo_1.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/67fcd/Sling-TV-logo_1.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/3/30/Sling_logo_new.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/c42b2/The_Sims_4.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/841f3/The_Sims_4.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/a/a4/The_Sims_4_New.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/7d427/epic-games-store.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/7/71/Epic_Games_Store_2023_Stacked_Black.svg");width:15%;}
 }
