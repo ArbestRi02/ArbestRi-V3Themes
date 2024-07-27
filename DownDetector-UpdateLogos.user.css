@@ -79,4 +79,25 @@ img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/c42b2/The_Sims_4
     
 img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/7d427/epic-games-store.png"] {
     content: url("https://static.wikia.nocookie.net/logopedia/images/7/71/Epic_Games_Store_2023_Stacked_Black.svg");width:15%;}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/6f5c1/zoom.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/60db4/zoom.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/0/0e/Zoom_2022.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/1a8d8/yelp.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/ab0ca/yelp.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/c/c6/Yelp_%282021%29.svg")}
+    
+img[src="https://cdn2.downdetector.com/static/uploads/c/200x100/90ed5/fandango.png"], img[src="https://cdn2.downdetector.com/static/uploads/c/300/da141/fandango.png"] {
+    content: url("https://static.wikia.nocookie.net/logopedia/images/2/23/Fandango_2014.svg")}
+    
+img[src="placeholder"], img[src="placeholder"] {
+    content: url("placeholder")}
+    
+img[src="placeholder"], img[src="placeholder"] {
+    content: url("placeholder")}
+    
+img[src="placeholder"], img[src="placeholder"] {
+    content: url("placeholder")}
+    
+img[src="placeholder"], img[src="placeholder"] {
+    content: url("placeholder")}
 }
