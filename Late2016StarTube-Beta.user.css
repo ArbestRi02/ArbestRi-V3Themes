@@ -14,7 +14,7 @@
     body, input, button, textarea {
     font-kerning: none;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -26,13 +26,13 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-pl-thumb .side-thumbs, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, .g-hovercard > .run-text.run:first-child, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .yt-uix-tooltip.yt-user-videos, #watch7-user-header .yt-user-separator, .distiller_stream-options .right-options, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-pl-thumb .side-thumbs, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .distiller_stream-options .right-options, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-item-container:hover .feed-item-header a,.feed-item-container:hover a.yt-user-name,.feed-header .metadata a:hover, .yt-uix-button-link{
+    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link{
         color: #167ac6 !important; }
     
     a, #watch7-sidebar .video-list-item a:hover .title,.yt-gb-shelf-hero-content .qualified-channel-title a, {
@@ -246,7 +246,7 @@ opacity:1}
     float: left;}
     
 .watch7-playlist-bar-right button .yt-uix-button-icon {
-    padding-right: 5px;}
+    padding-right: 8px;}
     
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .count {
     text-align: left;padding-left: 5px;}
@@ -354,7 +354,7 @@ opacity:1}
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -343px -23px;background-size: auto;width: 24px;height: 24px;}
     
 .yt-uix-button .yt-uix-button-icon-playlist-bar-shuffle {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -266px -248px;background-size: auto;width: 24px;height: 24px;}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -260px -248px;background-size: auto;width: 24px;height: 24px;}
     
 .yt-uix-button-icon-watch-like {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -483px -281px;}
