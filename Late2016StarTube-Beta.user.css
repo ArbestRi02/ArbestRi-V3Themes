@@ -14,7 +14,7 @@
     body, input, button, textarea {
     font-kerning: none;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -26,7 +26,7 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-pl-thumb .side-thumbs, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .distiller_stream-options .right-options, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .distiller_stream-options .right-options, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
@@ -77,23 +77,11 @@
     [exp-modern-topbar] #sb-button-notify {
         margin-right: 8px; }
 
-    .yt-pl-thumb .sidebar {
-        width: 43.75%;background: rgba(0,0,0,.85); }
-
     .yt-pl-thumb .video-count-wrapper {
-        height: 90px; text-transform: uppercase; color: #cfcfcf;}
+        height: 50px; color: #cfcfcf;}
 
     .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content {
         text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
-
-    .yt-pl-thumb .video-count-wrapper .text-label {
-        font-size: 10px; line-height: 20px; }
-
-    .yt-pl-thumb .video-count-wrapper .count-label {
-        font-size: 18px; font-weight: normal; }
-
-    .yt-pl-thumb-link .yt-pl-thumb-overlay {
-        min-width: 195px; }
 
     .pl-header .pl-header-details, .pl-header .pl-header-description {
         margin: 4px 0; line-height: 1.3em; }
@@ -328,9 +316,6 @@ opacity:1}
 
 #watch7-views-info .video-extras-sparkbars.yt-uix-tooltip {
     margin: -1px 0 -2px 0;}
-    
-.yt-pl-thumb .video-count-wrapper:after {
-    content: '';display: block;margin: 0 31px;position: relative;top: -30px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -28px;background-size: auto;width: 24px;height: 24px;}
 
 .checkbox-on-off > label:after {
     content: '';cursor: pointer;display: inline-block;margin-left: 4px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
