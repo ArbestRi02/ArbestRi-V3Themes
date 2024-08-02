@@ -72,7 +72,7 @@
         overflow: overlay !important; }
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
-        padding: 0 9px 0 4.5px; }
+        padding: 0 8px 0 5.5px; }
 
     [exp-modern-topbar] #sb-button-notify {
         margin-right: 8px; }
@@ -206,8 +206,11 @@ opacity:1}
 .watch-extras-section .title,.watch-extras-section .content{
     font-size:11px; line-height:11px; margin-bottom:5px}
 
+.watch-extras-section .content {
+    color:#333;}
+
 .watch-extras-section .title{
-    float:left; font-weight:500; width:50px; margin-right:10px}
+    float:left; font-weight:500; width:50px; margin-right:50px}
 
 .yt-alert-default.yt-alert-error .icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
@@ -229,6 +232,10 @@ opacity:1}
     
 #watch7-playlist-tray .playlist-bar-item-playing {
     background-color: #3a3a3a;}
+    
+.watch7-playlist-bar-secondary-controls {
+    padding: 0 11px;
+}
     
 .watch7-playlist-bar-notifications, .watch7-playlist-bar-secondary-controls {
     float: left;}
@@ -296,7 +303,7 @@ opacity:1}
 #FEhistory-guide-item > .yt-valign.yt-uix-sessionlink.guide-item {
     margin-top:8px;}
 
-.distiller_yt_headline, .yt-gb-shelf-hero-content .description {
+.yt-gb-shelf-hero-content .description {
     color: #555;}
     
 .yt-gb-shelf-hero-content .description, .category-header .channel-count {
@@ -344,6 +351,9 @@ opacity:1}
 .yt-uix-button-icon-watch-like {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -483px -281px;}
     
+.actionable .yt-uix-button:active .yt-uix-button-icon-watch-like, .actionable .yt-uix-button.yt-uix-button-toggled .yt-uix-button-icon-watch-like {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflU8QvQi.png) -79px -278px;}
+    
 .yt-uix-button-icon-watch-dislike {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -361px -178px;}
     
@@ -352,6 +362,9 @@ opacity:1}
     
 #appbar-nav .epic-nav-item-heading, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item {
     padding: unset;}
+    
+.watch8-floater {
+    border: 1px solid #d3d3d3;box-shadow: 0 2px 4px rgba(0,0,0,.2);}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
