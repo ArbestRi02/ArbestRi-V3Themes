@@ -11,9 +11,6 @@
     h1,h2, #watch7-playlist-tray .video-list-item .count{
     font-weight:normal;}
     
-    body, input, button, textarea {
-    font-kerning: none;}
-    
     .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label {
     font-weight: 500}
 
@@ -72,7 +69,7 @@
         overflow: overlay !important; }
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
-        padding: 0 8px 0 5.5px; }
+        padding: 0 10px 0 5.5px; }
 
     [exp-modern-topbar] #sb-button-notify {
         margin-right: 8px; }
@@ -234,7 +231,7 @@ opacity:1}
     background-color: #3a3a3a;}
     
 .watch7-playlist-bar-secondary-controls {
-    padding: 0 11px;
+    padding: 0 11px !important;
 }
     
 .watch7-playlist-bar-notifications, .watch7-playlist-bar-secondary-controls {
