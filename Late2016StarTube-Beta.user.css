@@ -11,7 +11,7 @@
     h1,h2, #watch7-playlist-tray .video-list-item .count{
     font-weight:normal;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -231,8 +231,7 @@ opacity:1}
     background-color: #3a3a3a;}
     
 .watch7-playlist-bar-secondary-controls {
-    padding: 0 11px !important;
-}
+    padding: 0 11px !important;}
     
 .watch7-playlist-bar-notifications, .watch7-playlist-bar-secondary-controls {
     float: left;}
@@ -243,9 +242,7 @@ opacity:1}
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .count {
     text-align: left;padding-left: 5px;}
     
-.video-list-item.yt-uix-scroller-scroll-unit.playlist-bar-item-playing > .spf-link > .stat.count {
-    & when (@FooterLogo = 2015-2017) {
-    color:#c03636 !important; }
+#watch7-playlist-tray .playlist-bar-item-playing .count {
     & when (@FooterLogo = 2017-2024) {
     color:#f00 !important; } }
 
@@ -265,7 +262,10 @@ opacity:1}
     content: "Description";font-weight:500;margin-left: 10px; }
 
 .branded-page-v2-primary-col .about-description.branded-page-box-padding {
-    padding: 10px;}
+    padding: 10px;}   
+
+#c4-about-tab .about-custom-links:before {
+    content: "Links";display: block;font-size: 13px;font-weight: 500;border-top:1px solid #e2e2e2;padding-top:10px;padding-bottom:10px}
 
 .yt-pl-thumb-overlay img {
     width: 12px; height: 10px;}
@@ -362,6 +362,9 @@ opacity:1}
     
 .watch8-floater {
     border: 1px solid #d3d3d3;box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+    
+.branded-page-v2-primary-col .branded-page-box-padding {
+    padding: 10px;}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
