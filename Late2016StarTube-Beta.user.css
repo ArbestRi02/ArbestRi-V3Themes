@@ -93,7 +93,7 @@
         padding: 13px 15px; }
 
     .pl-header .pl-header-title {
-        color: #333; font-size: 20px; font-weight: 500; padding: 1px; padding-left: 0; vertical-align: middle; line-height: 33px; }
+        font-size: 20px; font-weight: 500; padding: 1px; line-height: 33px; }
     
     .pl-header .yt-uix-button-icon-playlist-like {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -812px -38px; width: 13px; height: 13px; }
@@ -131,7 +131,7 @@
 .yt-ui-ellipsis {
     line-height: 1.25em; }
     
-.video-player-view-component .view-count .content-item-time-created {
+.video-player-view-component .view-count .content-item-time-created, .watch-extras-section .content{
     margin-left: 0; }
 
 .yt-uix-button-icon-play-all {
@@ -207,7 +207,7 @@ opacity:1}
     font-size:11px; line-height:11px; margin-bottom:5px}
 
 .watch-extras-section .title{
-    float:left; font-weight:500; width:100px; margin-right:10px}
+    float:left; font-weight:500; width:50px; margin-right:10px}
 
 .yt-alert-default.yt-alert-error .icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
