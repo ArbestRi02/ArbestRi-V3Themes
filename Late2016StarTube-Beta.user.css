@@ -23,7 +23,7 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:nth-of-type(1) > .guide-section-separator, #guide-library-section > h3, .guide-section:nth-of-type(5) > .guide-section-separator, .feed-item-checkbox-container, .distiller_stream-options .right-options, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
@@ -48,7 +48,7 @@
         background: no-repeat url(//www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png); background-size: 100px 30px; width: 100px; } }
 
     .yt-lockup {
-        line-height: 1.3em;position: relative; }
+        line-height: 1.3em }
 
     .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity {
         color: #767676; }
@@ -109,9 +109,6 @@
     
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded:hover {
     border-color: #bfbfbf; background-color: #f6f6f6}
-
-.stream_content>.continuation_item_wrapper>.load-more-button>.jfk-button-text, .distiller_streamcontent_directlink>.continuation_item_wrapper>.load-more-button>.jfk-button-text {
-    background-image: unset; }
     
 [exp-modern-styles]:not([exp-polymer-styles]) .yt-lockup-grid .yt-lockup-title {
     margin-top: unset;}
@@ -121,9 +118,6 @@
 
 .exp-new-subscribe-style .yt-subscription-button-subscriber-count-branded-horizontal {
     padding: 0 7px; color: #737373; }
-
-#watch-related >li.video-list-item.related-list-item.context-data-item >.related-video.yt-uix-contextlink.yt-uix-sessionlink > .stat.attribution > .g-hovercard > span.run.run-text > b {
-    font-weight: normal !important; }
 
 .yt-ui-ellipsis {
     line-height: 1.25em; }
@@ -143,10 +137,10 @@
 #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -84px; width: 20px; height: 20px;}
     
-.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off > label:after {
+.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after {
     opacity: 0.5;}
     
-.distiller_yt_headline > span.run-text.run:first-child:after {
+.distiller_yt_headline span.run-text.run:first-child:after {
     content: '\002022'; margin: 0 3px;}
     
 #transcript.watch8-menuitem:before {
@@ -216,7 +210,7 @@ opacity:1}
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
 
 .multirow-shelf .yt-uix-expander-head {
-    position: relative;z-index: 1;margin-right: 10px;text-align: right;color: #167ac6;font-size: 12px;font-weight: 500;}
+    margin-right: 10px}
 
 #FEsubscriptions-guide-item > .guide-item.yt-uix-sessionlink.yt-valign {
     border-bottom: 1px solid #e2e2e2; margin-bottom: 8px; }
@@ -261,7 +255,7 @@ opacity:1}
 #c4-about-tab:before {
     content: "Description";font-weight:500;margin-left: 10px; }
 
-.branded-page-v2-primary-col .about-description.branded-page-box-padding {
+.branded-page-v2-primary-col .branded-page-box-padding {
     padding: 10px;}   
 
 #c4-about-tab .about-custom-links:before {
@@ -362,9 +356,6 @@ opacity:1}
     
 .watch8-floater {
     border: 1px solid #d3d3d3;box-shadow: 0 2px 4px rgba(0,0,0,.2);}
-    
-.branded-page-v2-primary-col .branded-page-box-padding {
-    padding: 10px;}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
