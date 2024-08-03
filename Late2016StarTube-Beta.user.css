@@ -1,17 +1,18 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube Beta
 @namespace      github.com/ArbestRi02/
-@version        1.1.5
+@version        1.1.6
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor   less
 @var            select              FooterLogo                 "Footer logo"              ["2015-2017*", "2017-2024"]
+@var            checkbox            PlusYouTube                "+YouTube on footer"       0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
     h1,h2, #watch7-playlist-tray .video-list-item .count{
     font-weight:normal;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -260,7 +261,7 @@ opacity:1}
 
 .yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
-
+/* clicking on "LIBRARY" will send you to history page. it does this because it's adding something to the history tab. */
 #FEhistory-guide-item:before {
     & when (@FooterLogo = 2015-2017) {
     content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px;font-weight:500}
@@ -344,6 +345,10 @@ opacity:1}
     
 .watch8-floater {
     border: 1px solid #d3d3d3;box-shadow: 0 2px 4px rgba(0,0,0,.2);}
+ 
+    [href*="//www.youtube.com/yt/dev/"]:after {
+        & when (@PlusYouTube = 1) {
+        content:"+YouTube";padding-left:15px}}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
