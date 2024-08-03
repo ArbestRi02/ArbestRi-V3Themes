@@ -11,7 +11,7 @@
     h1,h2, #watch7-playlist-tray .video-list-item .count{
     font-weight:normal;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -23,7 +23,7 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim, #c4-about-tab .about-network-links {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
@@ -74,14 +74,14 @@
     .yt-pl-thumb .video-count-wrapper {
         height: 50px; color: #cfcfcf;}
 
-    .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content {
+    .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content, .pl-header-thumb .pl-header-thumb-overlay {
         text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
 
     .pl-header .pl-header-details, .pl-header .pl-header-description {
         margin: 4px 0; line-height: 1.3em; }
 
-    .pl-header-details>li:nth-of-type(1)>.run.run-link.g-hovercard>b {
-        font-weight: normal; color: #767676; }
+    .pl-header-details li:nth-of-type(1) .run.run-link.g-hovercard b  {
+        font-weight: normal !important; color: #767676; }
 
     .pl-video {
         padding: 13px 15px; }
