@@ -60,7 +60,7 @@
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
         border-right: 1px solid #e8e8e8; }
 
-    [exp-modern-styles] a.yt-uix-button.yt-uix-button-epic-nav-item, [exp-modern-styles] button.yt-uix-button-epic-nav-item, .exp-top-guide .guide-view-more, [exp-modern-styles] .epic-nav-item-heading, .branded-page-related-channels, .branded-page-related-channels h3, .yt-gb-shelf-hero-content .description, .category-header .channel-count, #c4-about-tab .about-stat-value {
+    [exp-modern-styles] a.yt-uix-button.yt-uix-button-epic-nav-item, [exp-modern-styles] button.yt-uix-button-epic-nav-item, .exp-top-guide .guide-view-more, [exp-modern-styles] .epic-nav-item-heading, .branded-page-related-channels, .branded-page-related-channels h3, .yt-gb-shelf-hero-content .description, .category-header .channel-count {
         font-size: 13px; }
     
     .exp-top-guide .guide-item .display-name {
@@ -138,8 +138,11 @@
 .yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after {
     opacity: 0.5;}
     
-.distiller_yt_headline span.run-text.run:first-child:after, #c4-about-tab .about-stats .about-stat:after {
+.distiller_yt_headline span.run-text.run:first-child:after {
     content: '\002022'; margin: 0 3px;}
+    
+#c4-about-tab .about-stats .about-stat:after:last-of-type {
+    display:none}
     
 #transcript.watch8-menuitem:before {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
@@ -192,7 +195,7 @@ opacity:1}
 .watch-extras-section .title,.watch-extras-section .content{
     font-size:11px; line-height:11px; margin-bottom:5px}
 
-.watch-extras-section .content, #c4-about-tab .about-stats .about-stat {
+.watch-extras-section .content {
     color:#333;}
 
 .watch-extras-section .title{
@@ -246,7 +249,7 @@ opacity:1}
 
 .pl-video-owner.pl-video-detail:before {
     content: "by ";color: #767676;font-size: 12px;}
-
+/* about page stuff */
 #c4-about-tab:before {
     content: "Description";font-weight:500;margin-left: 10px; }
 
@@ -255,12 +258,9 @@ opacity:1}
 
 #c4-about-tab .about-custom-links:before {
     content: "Links";display: block;font-size: 13px;font-weight: 500;border-top:1px solid #e2e2e2;padding-top:10px;padding-bottom:10px}
-/* the way i did this currently sucks, so except it to be buggy */    
-.about-metadata-secondary-col {
-    float: left;position: absolute;top: calc(34.4% + 1px);}
     
-#c4-about-tab .about-stats {
-    display: ruby-text;}
+#c4-about-tab .about-custom-links {
+    margin-right: unset;}
 
 .yt-pl-thumb-overlay img {
     width: 12px; height: 10px;}
