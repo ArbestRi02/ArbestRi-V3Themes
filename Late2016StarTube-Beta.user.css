@@ -140,7 +140,7 @@
 #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -84px; width: 20px; height: 20px;}
     
-.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after {
+.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after, [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
     opacity: 0.5;}
     
 .distiller_yt_headline span.run-text.run:first-child:after {
@@ -248,12 +248,21 @@ opacity:1}
 
 #watch7-playlist-tray .video-list-item:hover{
     background: #525252;}
+    
+#watch7-playlist-index-and-length {
+    padding: unset;position: absolute;top: 25.7px;left: 65px;color: #b8b8b8;}
+    
+#watch7-playlist-index-and-length:after {
+    content:" videos"}
+    
+[exp-modern-playlists] .watch7-playlist-bar-left .title:after {
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;background-size: auto;width: 24px;height: 24px;right: 20px;top: 14px;}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
 
 .pl-video-owner.pl-video-detail:before {
-    content: "by ";color: #767676;font-size: 12px;}
+    content: "by";color: #767676;font-size: 12px;}
 /* about page stuff */
 #c4-about-tab:before {
     content: "Description";font-weight:500;margin-left: 10px; }
