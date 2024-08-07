@@ -24,13 +24,13 @@
     #channel-search .show-search img, #channel-search .yt-uix-button-icon-search {
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -594px -48px; height: 17px; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim, #c4-about-tab .about-network-links {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .feed-item-checkbox-container, #channel-search.expanded .search-button, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-quick-filter, .guide-quick-filter-container, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover{
+    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count{
         color: #167ac6 !important; }
     
     a, .yt-gb-shelf-hero-content .qualified-channel-title a {
@@ -152,10 +152,10 @@
     padding: 0 15px;}
 
 .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
-background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; background-size:auto; width:16px; height:16px}
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; width:16px; height:16px}
     
 .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow{
-background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; background-size:auto; width:16px; height:16px}
+background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -676px 0; width:16px; height:16px}
     
 .yt-uix-button-icon-c4-grid-flow,.yt-uix-button-icon-c4-list-flow{
 opacity:.6}
@@ -166,29 +166,32 @@ opacity:.7}
 .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 opacity:.8}
     
-.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, #footer .yt-uix-button-icon-footer-language, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover, [exp-search-text] #masthead-search-term::placeholder{
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover, [exp-search-text] #masthead-search-term::placeholder{
 opacity:1}
 
 .exp-top-guide .guide-item .thumb {
     margin-left: 9px;}
 
-#content-sort-menu {
+#content-sort-menu, .share-group li {
     margin-right: 5px;}
+    
+.share-service-icon-googleplus {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-sharing-vflS2HJTD.png) 0 -420px;}
 
 .yt-lockup-meta, .yt-lockup-description, .yt-lockup-badges {
     margin: 3px 0 0;}
 
 .yt-alert-naked.yt-alert-success .icon, .yt-alert-small.yt-alert-success .icon {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -615px -121px; background-size: auto; width: 19px; height: 20px;}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflDupCLr.png) -615px -121px; width: 19px; height: 20px;}
 
 .yt-alert-naked .yt-alert-content {
     padding: 4px 13px 3px 0;}
     
 .yt-alert-default.yt-alert-info .icon,.yt-alert-actionable.yt-alert-info .icon{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -415px -210px; width:20px; height:21px}
     
 .yt-alert-naked.yt-alert-info .icon,.yt-alert-small.yt-alert-info .icon{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; background-size:auto; width:20px; height:20px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -374px -128px; width:20px; height:20px}
 
 .yt-alert-actionable .yt-alert-content, .yt-alert-default .yt-alert-content {
     padding: 10px 0;}
@@ -203,10 +206,10 @@ opacity:1}
     float:left; font-weight:500 !important; width:50px; margin-right:50px}
 
 .yt-alert-default.yt-alert-error .icon{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -523px -230px; width:20px; height:21px}
 
 .yt-alert-default.yt-alert-warn .icon,.yt-alert-actionable.yt-alert-warn .icon{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; background-size:auto; width:20px; height:21px}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -394px -25px; width:20px; height:21px}
 
 .multirow-shelf .yt-uix-expander-head {
     margin-right: 10px}
@@ -215,7 +218,7 @@ opacity:1}
     border-bottom: 1px solid #e2e2e2; margin-bottom: 8px; }
 
 .pl-header .yt-uix-button-icon-gear {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; background-size:auto; width:16px; height:16px }
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -150px -214px; width:16px; height:16px }
 
 .channel-header #header-links {
     right: 15px; }
@@ -252,7 +255,7 @@ opacity:1}
     content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;background-size: auto;width: 24px;height: 24px;right: 18px;top: 16px;}
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 18px;top: 16px;}
     
 #watch7-playlist-tray .video-list-item a {
     padding: 7px 7px 0;}
@@ -282,7 +285,7 @@ opacity:1}
     width: 12px; height: 10px;}
 
 .yt-alert-actionable.yt-alert-success .icon,.yt-alert-default.yt-alert-success .icon{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; background-size:auto; width:20px; height:21px}
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; width:20px; height:21px}
 /* clicking on "LIBRARY" will send you to history page. it does this because it's adding something to the history tab. */
 #FEhistory-guide-item:before {
     & when (@FooterLogo = 2015-2017) {
@@ -300,10 +303,10 @@ opacity:1}
     padding-bottom: unset;}
     
 .oz-sprite.oz-page-verified{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -442px -197px;background-size:auto;width:12px;height:9px}
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -442px -197px;width:12px;height:9px}
     
 .oz-sprite.oz-page-verified:hover{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -58px -248px;background-size:auto;width:12px;height:9px}
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -58px -248px;width:12px;height:9px}
     
 .branded-page-module-title-v2 .branded-page-module-avatar {
     margin-top: 1px;}
@@ -321,13 +324,13 @@ opacity:1}
     font-size: 18px;}
     
 .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px !important;background-size:auto;width:18px;height:18px}
+    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px !important;width:18px;height:18px}
     
 .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper {
     height: 14px;}
 
 .checkbox-on-off > label:after {
-    content: '';cursor: pointer;display: inline-block;margin-left: 4px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;background-size: auto;width: 16px;height: 14px}
+    content: '';cursor: pointer;display: inline-block;margin-left: 4px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;width: 16px;height: 14px}
     
 .checkbox-on-off label, .yt-uix-checkbox-on-off label {
     cursor: default;}
@@ -345,10 +348,10 @@ opacity:1}
     background:unset;visibility: visible !important;}
     
 .yt-uix-button .yt-uix-button-icon-playlist-bar-autoplay {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -343px -23px;background-size: auto;width: 24px;height: 24px;}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -343px -23px;width: 24px;height: 24px;}
     
 .yt-uix-button .yt-uix-button-icon-playlist-bar-shuffle {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -260px -248px;background-size: auto;width: 24px;height: 24px;}
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -260px -248px;width: 24px;height: 24px;}
     
 .yt-uix-button-icon-watch-like {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -483px -281px;}
@@ -373,8 +376,7 @@ opacity:1}
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -24px 0 !important}
     
 #content-container, #body-container {
-    padding-bottom: 195px;}
-}
+    padding-bottom: 195px;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
