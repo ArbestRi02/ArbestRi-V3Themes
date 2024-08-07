@@ -104,8 +104,7 @@
     
     @media screen and (min-width: 1700px) {
     .pl-video-detail-container .pl-video-owner {
-        width:903px
-    }}
+        width:903px}}
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 5.5px; box-shadow: unset; }
@@ -140,15 +139,12 @@
 #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -235px -84px; width: 20px; height: 20px;}
     
-.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after, [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    opacity: 0.5;}
+.yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after, [exp-modern-playlists] .watch7-playlist-bar-left .title:after, #footer .yt-uix-button-icon-footer-language {
+    opacity: 0.5 !important;}
     
 .distiller_yt_headline span.run-text.run:first-child:after {
     content: '\002022'; margin: 0 3px;}
-    
-#c4-about-tab .about-stats .about-stat:after:last-of-type {
-    display:none}
-    
+
 #transcript.watch8-menuitem:before {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
 
@@ -248,15 +244,21 @@ opacity:1}
 
 #watch7-playlist-tray .video-list-item:hover{
     background: #525252;}
-    
+/* index is in the center so it doesn't overlap the channel name */    
 #watch7-playlist-index-and-length {
-    padding: unset;position: absolute;top: 25.7px;left: 65px;color: #b8b8b8;}
+    padding: unset;position: absolute;top: 45.5px;left: 170px;color: #b8b8b8;}
     
 #watch7-playlist-index-and-length:after {
-    content:" videos"}
+    content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;background-size: auto;width: 24px;height: 24px;right: 20px;top: 14px;}
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;background-size: auto;width: 24px;height: 24px;right: 18px;top: 16px;}
+    
+#watch7-playlist-tray .video-list-item a {
+    padding: 7px 7px 0;}
+    
+[exp-modern-playlists] #watch7-playlist-bar-controls {
+    line-height: 0px}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
@@ -366,6 +368,12 @@ opacity:1}
 [href*="//www.youtube.com/yt/dev/"]:after {
     & when (@PlusYouTube = 1) {
     content:"+YouTube";padding-left:15px}}
+    
+#footer .yt-uix-button-icon-footer-language {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -24px 0 !important}
+    
+#content-container, #body-container {
+    padding-bottom: 195px;}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
