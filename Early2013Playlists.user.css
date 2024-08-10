@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Early 2013 Playlists for V3
+@namespace      github.com/ArbestRi02/ArbestRi-V3Themes
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    .yt-uix-button-toggled .yt-uix-button-icon-playlist-bar-autoplay, .yt-uix-button-toggled.yt-uix-button:hover .yt-uix-button-icon-playlist-bar-autoplay {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflaJ9wdK.png) -252px -59px;
+    width: 30px;
+    height: 18px;
+}
+
+.yt-uix-button .yt-uix-button-icon-playlist-bar-shuffle {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflaJ9wdK.png) -74px -120px;
+    width: 30px;
+    height: 18px;
+}
+
+.yt-uix-button-icon-playlist-bar-prev {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflaJ9wdK.png) -18px -148px;
+    width: 30px;
+    height: 18px;
+}
+
+.yt-uix-button-icon-playlist-bar-next {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflaJ9wdK.png) -131px -235px;
+    width: 30px;
+    height: 18px;
+}
+
+.watch-playlist-collapsed .yt-uix-button-icon-playlist-bar-toggle {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflaJ9wdK.png) -291px -157px;
+    width: 30px;
+    height: 18px;
+}
+}
