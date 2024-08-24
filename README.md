@@ -6,3 +6,4 @@ This is where I make WIP userstyles and push beta versions of my styles. Release
 3. Skeumorphic Theme for V3: I don't work on it anymore. It's more like gradients everywhere than skeumorphism.
 4. Update DownDetector Logos: Updates the plenty of outdated logos on DownDetector's home page. Images are from Logopedia.
 5. Glass Masthead and Guide for V3: Adds glass effects to V3's search box, masthead and guide.
+6. Earky 2013 Playlists for V3: Makes normal V3 watch playlists like early 2013.
