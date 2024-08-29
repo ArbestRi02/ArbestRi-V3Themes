@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube Beta
 @namespace      github.com/ArbestRi02/
-@version        1.1.6
+@version        1.1.7
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor   less
@@ -323,8 +323,8 @@ opacity:1}
 .category-header .category-title {
     font-size: 18px;}
     
-.exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences{
-    background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -209px -154px !important;width:18px;height:18px}
+[exp-modern-notif-icon] .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences{
+    background-position: -53px -537px !important;width:18px;height:18px}
     
 .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper {
     height: 14px;}
@@ -376,7 +376,13 @@ opacity:1}
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -24px 0 !important}
     
 #content-container, #body-container {
-    padding-bottom: 195px;}}
+    padding-bottom: 195px;}
+/* thumbnail fix */
+[location^="feed"][exp-modern-home]:not([exp-rich-grid-home]) .yt-thumb-185 {
+    width: 185px;}
+
+#eow-description {
+    padding-top: 4px}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
