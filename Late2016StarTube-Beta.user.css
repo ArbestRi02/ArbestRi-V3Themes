@@ -5,7 +5,7 @@
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor   less
-@var            select              FooterLogo                 "Red color"              ["Classic (2015-2017)*", "Ringo (2017 & Beyond)"]
+@var            select              FooterLogo                 "Red color"              ["Classic*", "Ringo", "Ringo2"]
 @var            checkbox            PlusYouTube                "+YouTube on footer"       0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
@@ -92,7 +92,7 @@
     
     @media screen and (min-width: 1700px) {
     .pl-video-detail-container .pl-video-owner {
-        width:903px}}
+        width:902px}}
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 5.5px; box-shadow: unset; }
@@ -221,8 +221,10 @@ opacity:1}
     text-align: left;padding-left: 5px;}
     
 #watch7-playlist-tray .playlist-bar-item-playing .count {
-    & when (@FooterLogo = 2017-2024) {
-    color:#f00 !important; } }
+    & when (@FooterLogo = Ringo) {
+    color:#f00 !important; }
+    & when (@FooterLogo = Ringo2) {
+    color: #ff0033 !important; }}
 
 #watch7-playlist-tray .video-list-item .ux-thumb-wrap {
     margin-left: -5px;}
@@ -270,10 +272,12 @@ opacity:1}
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -398px 0; width:20px; height:21px}
 /* clicking on "LIBRARY" will send you to history page. it does this because it's adding something to the history tab. */
 #FEhistory-guide-item:before {
-    & when (@FooterLogo = 2015-2017) {
+    & when (@FooterLogo = Classic) {
     content: "LIBRARY";color: #cc181e;font-size: 11px;margin: 0 5px;font-weight:500}
-    & when (@FooterLogo = 2017-2024) {
-    content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px;font-weight:500;} }
+    & when (@FooterLogo = Ringo) {
+    content: "LIBRARY";color: #f00;font-size: 11px;margin: 0 5px;font-weight:500;}
+    & when (@FooterLogo = Ringo2) {
+    content: "LIBRARY";color: #ff0033;font-size: 11px;margin: 0 5px;font-weight:500;}}
 
 [exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon {
     background-position: -52px -321px;}
