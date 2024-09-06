@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube Beta
 @namespace      github.com/ArbestRi02/
-@version        1.1.7
+@version        1.1.8
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor   less
@@ -40,25 +40,28 @@
         background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflNVER5Q.webp) -442px -24px; }
 
     .yt-lockup {
-        line-height: 1.3em }
+        line-height: 1.3em}
 
     .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity {
-        color: #767676; }
+        color: #767676;}
 
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
-        border-right: 1px solid #e8e8e8; }
+        border-right: 1px solid #e8e8e8;}
 
     .exp-top-guide .guide-view-more, [exp-modern-styles] .epic-nav-item-heading, .branded-page-related-channels, .branded-page-related-channels h3, .yt-gb-shelf-hero-content .description, .category-header .channel-count {
-        font-size: 13px; }
+        font-size: 13px;}
     
     .exp-top-guide .guide-item .display-name {
-        height: 14px; width: 140px; }
+        height: 14px; width: 140px;}
 
     [exp-true-scrollable-guide] #appbar-guide-menu {
-        overflow: overlay !important; }
+        overflow: overlay !important;}
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
-        padding: 0 10px 0 5.5px; }
+        padding: 0 10px 0 5px;}
+    
+    .exp-new-subscribe-style .yt-subscription-button-subscriber-count-branded-horizontal {
+        line-height: 24px;}
 
     .yt-pl-thumb .video-count-wrapper {
         height: 50px; color: #cfcfcf;}
@@ -365,7 +368,13 @@ opacity:1}
     width: 185px;}
 
 #eow-description {
-    padding-top: 4px}}
+    padding-top: 4px}
+
+.stream_content > .continuation_item_wrapper > .load-more-button > .jfk-button-text {
+    height: 28px;border: solid 1px transparent;padding: 0 10px;font-weight: 500;font-size: 11px;border-radius: 2px;box-shadow: 0 1px 0 rgba(0,0,0,0.05);width: 546px;border-color: #d3d3d3;background: #f8f8f8;}
+
+body #footer-container {
+    padding-left: 30px !important;padding-right: 0px !important;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
