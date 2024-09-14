@@ -154,7 +154,7 @@ opacity:.7}
 .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 opacity:.8}
     
-.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover, [exp-search-text] #masthead-search-term::placeholder{
+.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-list-flow,.yt-uix-button-toggled:hover .yt-uix-button-icon-c4-grid-flow, .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-subscription-preferences:hover{
 opacity:1}
 
 .exp-top-guide .guide-item .thumb {
