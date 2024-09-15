@@ -11,6 +11,24 @@
 @-moz-document domain("www.youtube.com") {
     h1,h2, #watch7-playlist-tray .video-list-item .count{
     font-weight:normal;}
+    /* stuff for error page */
+    body {
+    background: #f1f1f1;}
+        
+    img[src="//s.ytimg.com/yts/img/image-hh-404-vflxxCpNv.png"] {
+    content: url("https://s.ytimg.com/yts/img/image-hh-404-vflvCykRp.png")}
+    
+    #error-page-content p {
+    line-height: 19px;}
+    
+    #yt-masthead #logo {
+        background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflWeMB93.png) -594px -67px;}
+    
+    #error-page-content #logo-container {
+    margin-right: 9px;}
+    
+    #masthead-search .search-btn-component .yt-uix-button-content {
+    opacity: .6;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflWeMB93.png) -594px -48px;width: 15px;height: 15px;}
     
     .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content, .yt-gb-preview-videos-title, .channel-header .about-custom-link-text {
     font-weight: 500}
