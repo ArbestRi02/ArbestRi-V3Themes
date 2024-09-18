@@ -267,6 +267,9 @@ opacity:1}
     
 [exp-modern-playlists] #watch7-playlist-bar-controls {
     line-height: 0px}
+/* fix playlist bar being a bit screwed */
+[exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
+    max-width: 413px !important;}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
@@ -389,7 +392,7 @@ opacity:1}
     padding-top: 4px}
 
 .stream_content > .continuation_item_wrapper > .load-more-button > .jfk-button-text {
-    height: 28px;border: solid 1px transparent;padding: 0 10px;font-weight: 500;font-size: 11px;border-radius: 2px;box-shadow: 0 1px 0 rgba(0,0,0,0.05);width: 546px;border-color: #d3d3d3;background: #f8f8f8;}
+    height: 28px;border: solid 1px transparent;padding: 0 10px;font-weight: 500;font-size: 11px;border-radius: 2px;box-shadow: 0 1px 0 rgba(0,0,0,0.05);border-color: #d3d3d3;background: #f8f8f8;}
 
 body #footer-container {
     padding-left: 30px !important;padding-right: 0px !important;}}
