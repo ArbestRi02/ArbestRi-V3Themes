@@ -48,7 +48,7 @@
     .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count{
         color: #167ac6 !important; }
     
-    a, .yt-gb-shelf-hero-content .qualified-channel-title a {
+    a, .yt-gb-shelf-hero-content .qualified-channel-title a, .pl-header-details li:nth-of-type(1) .run.run-link.g-hovercard b:hover {
         color: #167ac6; } 
     
      .yt-alert-default.yt-alert-info,.yt-alert-actionable.yt-alert-info,.yt-alert-naked.yt-alert-info .yt-alert-icon,.yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
@@ -86,9 +86,12 @@
 
     .yt-pl-thumb-overlay .yt-pl-thumb-overlay-content, .pl-header-thumb .pl-header-thumb-overlay {
         text-transform: uppercase; font-size: 13px;text-shadow: none;font-weight: 500; }
+    
+    .pl-video-list {
+        margin: 0 -19px;}
 
     .pl-header .pl-header-details, .pl-header .pl-header-description {
-        margin: 4px 0; line-height: 1.3em; }
+        margin: 4px 0; line-height: 1.3em;font-size: 12px }
 
     .pl-header-details li:nth-of-type(1) .run.run-link.g-hovercard b  {
         font-weight: normal !important; color: #767676; }
@@ -103,7 +106,7 @@
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -812px -38px; width: 13px; height: 13px; }
     
     .pl-video-detail-container .pl-video-detail {
-    line-height: 23px;}
+    line-height: 20px;}
     
     .pl-video-detail-container .pl-video-owner a {
     color: #767676; font-size: 12px;}
@@ -113,7 +116,13 @@
     
     @media screen and (min-width: 1700px) {
     .pl-video-detail-container .pl-video-owner {
-        width:902px}}
+        width:910px}}
+    
+    .pl-video-title-link {
+    line-height: 25px;}
+    /* makes playlist pager at least not look so ugly */
+    .pl-video-list .playlist-pager {
+    margin-left: 10px;}
     
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 5.5px; box-shadow: unset; }
@@ -310,7 +319,7 @@ opacity:1}
     color: #767676;font-weight:normal;}
     
 [exp-true-scrollable-guide] .guide-section:last-of-type {
-    padding-bottom: unset;}
+    padding-bottom: 60px;}
     
 .oz-sprite.oz-page-verified{
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -442px -197px;width:12px;height:9px}
