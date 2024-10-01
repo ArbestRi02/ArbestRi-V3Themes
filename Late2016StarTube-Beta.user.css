@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           Late 2016 for V3 + StarTube Beta
 @namespace      github.com/ArbestRi02/
-@version        1.1.8
+@version        1.1.9
 @description    Makes 2016 StarTube more faithful to late 2016.
 @author         ArbestRi
 @preprocessor   less
@@ -45,7 +45,7 @@
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
         border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
 
-    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count{
+    .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count, .actionable #watch-like:active .yt-uix-button-content, .actionable #watch-like.yt-uix-button-toggled .yt-uix-button-content{
         color: #167ac6 !important; }
     
     a, .yt-gb-shelf-hero-content .qualified-channel-title a, .pl-header-details li:nth-of-type(1) .run.run-link.g-hovercard b:hover {
@@ -117,9 +117,9 @@
     @media screen and (min-width: 1700px) {
     .pl-video-detail-container .pl-video-owner {
         width:910px}}
-    
+    @media screen and (min-width: 1700px) {
     .pl-video-title-link {
-    line-height: 25px;}
+        line-height: 25px;}}
     /* makes playlist pager at least not look so ugly */
     .pl-video-list .playlist-pager {
     margin-left: 10px;}
@@ -319,7 +319,7 @@ opacity:1}
     color: #767676;font-weight:normal;}
     
 [exp-true-scrollable-guide] .guide-section:last-of-type {
-    padding-bottom: 60px;}
+    padding-bottom: 57px;}
     
 .oz-sprite.oz-page-verified{
     background:no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -442px -197px;width:12px;height:9px}
