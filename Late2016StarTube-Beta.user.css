@@ -269,7 +269,7 @@ opacity:1}
     content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 18px;top: 16px;}
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 19px;top: 15px;}
     
 #watch7-playlist-tray .video-list-item a {
     padding: 7px 7px 0;}
@@ -404,7 +404,13 @@ opacity:1}
     height: 28px;border: solid 1px transparent;padding: 0 10px;font-weight: 500;font-size: 11px;border-radius: 2px;box-shadow: 0 1px 0 rgba(0,0,0,0.05);border-color: #d3d3d3;background: #f8f8f8;}
 
 body #footer-container {
-    padding-left: 30px !important;padding-right: 0px !important;}}
+    padding-left: 30px !important;padding-right: 0px !important;}
+
+.distiller_yt-thread .sentiment .oz-distiller-yt-like {
+    opacity: 0.54;background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-comments-vfltA6rO3.png) -255px 0;width: 14px;height: 14px;margin-bottom: 1px;}
+    
+.distiller_yt-thread .sentiment .oz-distiller-yt-dislike {
+    opacity: 0.54;background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-comments-vfltA6rO3.png) -255px -36px;width: 14px;height: 14px;margin-bottom: 1px;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
