@@ -9,9 +9,9 @@
 @var            checkbox            PlusYouTube                "+YouTube on footer"       0
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-    h1,h2, #watch7-playlist-tray .video-list-item .count{
+    h1,h2, #watch7-playlist-tray .video-list-item .count, [exp-modern-styles] .yt-lockup-tile .yt-user-name{
     font-weight:normal;}
-    /* stuff for error page */
+    /* 404 error page */
     body {
     background: #f1f1f1;}
         
@@ -410,7 +410,16 @@ body #footer-container {
     opacity: 0.54;background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-comments-vfltA6rO3.png) -255px 0;width: 14px;height: 14px;margin-bottom: 1px;}
     
 .distiller_yt-thread .sentiment .oz-distiller-yt-dislike {
-    opacity: 0.54;background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-comments-vfltA6rO3.png) -255px -36px;width: 14px;height: 14px;margin-bottom: 1px;}}
+    opacity: 0.54;background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-comments-vfltA6rO3.png) -255px -36px;width: 14px;height: 14px;margin-bottom: 1px;}
+    
+.ux-thumb-wrap .watched-progress {
+    max-height: 5px;}
+    
+.feed-item-container {
+    margin: unset;}
+    
+.feed-item-container .feed-author-bubble {
+    margin-left: 8px;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
