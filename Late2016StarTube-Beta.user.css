@@ -1,8 +1,8 @@
  /* ==UserStyle==
-@name           Late 2016 for V3 + StarTube Beta
+@name           2016 Tweaks for V3 + StarTube Beta
 @namespace      github.com/ArbestRi02/
 @version        1.1.9
-@description    Makes 2016 StarTube more faithful to late 2016.
+@description    Makes 2016 StarTube more faithful to 2016.
 @author         ArbestRi
 @preprocessor   less
 @var            select              FooterLogo                 "Red color"              ["Classic*", "Ringo", "Ringo2"]
@@ -245,7 +245,7 @@ opacity:1}
     float: left;}
     
 .watch7-playlist-bar-right button .yt-uix-button-icon {
-    padding-right: 8px;}
+    padding-right: 7px;}
     
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .count {
     text-align: left;padding-left: 5px;}
@@ -279,6 +279,9 @@ opacity:1}
 /* fix playlist bar being a bit screwed */
 [exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
     max-width: 413px !important;}
+/* if this breaks stuff on smaller screens i will remove this */ 
+[data-player-size="small"][exp-modern-playlists] .appbar-flexwatch-mini #watch7-playlist-tray {
+    height: 410px !important;}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
@@ -419,7 +422,10 @@ body #footer-container {
     margin: unset;}
     
 .feed-item-container .feed-author-bubble {
-    margin-left: 8px;}}
+    margin-left: 8px;}
+/* no back button before this */    
+.clearfix.branded-page-gutter-padding.branded-page-v2-subnav-container > button.yt-uix-button-size-default.yt-uix-button-default.yt-uix-button:nth-of-type(2) {
+    background:none;box-shadow:none;border:none;font-size:15px !important;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
