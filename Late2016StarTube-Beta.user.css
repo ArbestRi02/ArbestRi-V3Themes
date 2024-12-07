@@ -1,8 +1,8 @@
  /* ==UserStyle==
-@name           2016 Tweaks for V3 + StarTube Beta
+@name           2016 Tweaks for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.1.9
-@description    Makes 2016 StarTube more faithful to 2016.
+@version        1.1.10
+@description    Tweaks StarTube's 2016 style to be more accurate.
 @author         ArbestRi
 @preprocessor   less
 @var            select              FooterLogo                 "Red color"              ["Classic*", "Ringo", "Ringo2"]
@@ -30,13 +30,13 @@
     #masthead-search .search-btn-component .yt-uix-button-content {
     opacity: .6;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflWeMB93.png) -594px -48px;width: 15px;height: 15px;}
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content, .yt-gb-preview-videos-title, .channel-header .about-custom-link-text {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content, .yt-gb-preview-videos-title, .channel-header .about-custom-link-text, .lohp-video-link {
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
         font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
 
-    [exp-modern-styles] .channel-header .primary-header-contents {
+    [modern-cards] .channel-header .primary-header-contents {
         padding: 17px 15px 5px; }
 
     .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
@@ -159,12 +159,6 @@
     
 .yt-uix-button-default:before, .yt-uix-button-default .yt-uix-button-icon, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .checkbox-on-off label:after, [exp-modern-playlists] .watch7-playlist-bar-left .title:after, #footer .yt-uix-button-icon-footer-language {
     opacity: 0.5 !important;}
-    
-.distiller_yt_headline span.run-text.run:first-child:after {
-    content: '\002022'; margin: 0 3px;}
-
-#transcript.watch8-menuitem:before {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) 0 -215px; height:16px;}
 
 .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow{
 background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -840px -107px; width:16px; height:16px}
@@ -279,9 +273,6 @@ opacity:1}
 /* fix playlist bar being a bit screwed */
 [exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
     max-width: 413px !important;}
-/* if this breaks stuff on smaller screens i will remove this */ 
-[data-player-size="small"][exp-modern-playlists] .appbar-flexwatch-mini #watch7-playlist-tray {
-    height: 410px !important;}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
@@ -371,21 +362,9 @@ opacity:1}
     
 .yt-uix-button .yt-uix-button-icon-playlist-bar-shuffle {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -260px -248px;width: 24px;height: 24px;}
-    
-.yt-uix-button-icon-watch-like {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -483px -281px;}
-    
-.actionable .yt-uix-button:active .yt-uix-button-icon-watch-like, .actionable .yt-uix-button.yt-uix-button-toggled .yt-uix-button-icon-watch-like {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflU8QvQi.png) -79px -278px;}
-    
-.yt-uix-button-icon-watch-dislike {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -361px -178px;}
 
 #appbar-nav .epic-nav-item-heading, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, #watch-playlist-privacy-icon {
     padding: unset;}
-    
-.watch8-floater {
-    border: 1px solid #d3d3d3;box-shadow: 0 2px 4px rgba(0,0,0,.2);}
  
 [href*="//www.youtube.com/yt/dev/"]:after {
     & when (@PlusYouTube = 1) {
@@ -396,7 +375,7 @@ opacity:1}
     
 #content-container, #body-container {
     padding-bottom: 195px;}
-/* thumbnail fix */
+/* thumbnail fix for list view subscriptions */
 [location^="feed"][exp-modern-home]:not([exp-rich-grid-home]) .yt-thumb-185 {
     width: 185px;}
 
