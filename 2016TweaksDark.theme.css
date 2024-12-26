@@ -1,0 +1,67 @@
+/* ==UserStyle==
+@name           Dark Mode for 2016 StarTube Tweaks
+@namespace      github.com/openstyles/stylus
+@version        1.0.1
+@description    Dark mode for 2016 Tweaks for StarTube
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled], .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:hover, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:active, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:focus {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #c3c3c3;
+}
+
+#FEsubscriptions-guide-item > .guide-item.yt-uix-sessionlink.yt-valign, .cardified-page .branded-page-v2-subnav-container {
+    border-bottom: 1px solid #323232;
+}
+#c4-about-tab .about-custom-links:before {
+    border-top: 1px solid #323232;
+}
+.exp-new-subscribe-style .yt-uix-button-subscribed-branded, .exp-new-subscribe-style .yt-uix-button-subscribed-branded[disabled], .exp-new-subscribe-style .yt-uix-button-subscribed-branded[disabled]:hover, .exp-new-subscribe-style .yt-uix-button-subscribed-branded[disabled]:active, .exp-new-subscribe-style .yt-uix-button-subscribed-branded[disabled]:focus, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded[disabled], .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded[disabled]:hover, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded[disabled]:active, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded[disabled]:focus {
+    border: 1px solid #3c3c3c;
+    background-color: #5d5d5d;
+    color: #999;
+}
+#footer-links-primary a {
+    color: #939393;
+}
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span {
+    filter: invert(1) !important;
+}
+.watch8-floater {
+    background:#222;border: 1px solid #3c3c3c
+}
+.watch8-menuitem {
+    color: #c3c3c3;
+}
+.watch8-menuitem:hover {
+    background:#6c6c6c
+}
+.video-player-view-component .description.yt-uix-expander-collapsed .yt-uix-expander-head {
+    background-color:#222
+}
+
+#st-account-menu-details a {
+    border-color: #3c3c3c;
+    background: #333333;
+    color: #c3c3c3;
+}
+
+#st-account-menu-details a:hover {
+    border-color: #3c3c3c;
+    background: #222;
+    color: #c3c3c3;
+}
+.st-acme {
+    border-color: #383838
+}
+.st-account-menu-header {
+    background:#383838
+}
+
+.st-acme .yt-uix-card-body-arrow-vertical {
+    border-bottom-color: #383838
+}
+}
