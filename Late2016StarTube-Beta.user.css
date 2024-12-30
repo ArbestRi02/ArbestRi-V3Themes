@@ -36,9 +36,6 @@
     .cardified-page .branded-page-related-channels h2 {
         font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
 
-    [modern-cards] .channel-header .primary-header-contents {
-        padding: 17px 15px 5px; }
-
     .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim {
         display: none !important }
 
@@ -60,8 +57,8 @@
     .yt-lockup {
         line-height: 1.3em}
 
-    .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity {
-        color: #767676;}
+    .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity, .feed-item-main .feed-item-header a, .feed-item-main a.yt-user-name, .lohp-video-metadata, .lohp-video-metadata .view-count {
+        color: #767676 !important;}
 
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
         border-right: 1px solid #e8e8e8;}
@@ -341,12 +338,6 @@ opacity:1}
     
 .exp-new-subscribe-style .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper {
     height: 14px;}
-
-.checkbox-on-off > label:after {
-    content: '';cursor: pointer;display: inline-block;margin-left: 4px;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -189px -132px;width: 16px;height: 14px}
-    
-.checkbox-on-off label, .yt-uix-checkbox-on-off label {
-    cursor: default;}
     
 #watch8-actions-row {
     padding-bottom: 7px;}
@@ -401,10 +392,7 @@ body #footer-container {
     margin: unset;}
     
 .feed-item-container .feed-author-bubble {
-    margin-left: 8px;}
-/* no back button before this */    
-.clearfix.branded-page-gutter-padding.branded-page-v2-subnav-container > button.yt-uix-button-size-default.yt-uix-button-default.yt-uix-button:nth-of-type(2) {
-    background:none;box-shadow:none;border:none;font-size:15px !important;}}
+    margin-left: 8px;}}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
